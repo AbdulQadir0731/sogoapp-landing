@@ -1,170 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SogoApp — Private Messaging, Calls &amp; Live</title>
-  <meta name="description" content="SogoApp is a private messaging and calling app — secure 1:1 and group chats, HD voice and video calls, live streaming with co-hosts, status updates and more." />
-  <meta property="og:title" content="SogoApp — Private Messaging, Calls & Live" />
-  <meta property="og:description" content="Secure chats, HD calls, live streaming and status — reimagined for privacy." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%233E72FE'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SogoApp — Chat, Go Live &amp; Earn</title>
+<meta name="description" content="SogoApp is a messaging app with voice and video calls, group chats, status, live streaming and a built-in coin wallet. Free on iOS and Android.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<meta property="og:title" content="SogoApp — Chat, Go Live &amp; Earn">
+<meta property="og:description" content="Messaging, calls, group chats, status, live streaming and a coin wallet — in one app.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://app.sogoapps.com">
+<meta property="og:image" content="https://app.sogoapps.com/assets/shots/chat.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div class="room"></div><div class="grid"></div>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="index.html" class="brand"><span class="mark">S</span> Sogo<span style="color:var(--blue)">App</span></a>
-      <nav class="nav-links">
-        <a href="#features" class="hide-sm">Features</a>
-        <a href="#privacy" class="hide-sm">Privacy</a>
-        <a href="support" class="hide-sm">Support</a>
-        <a href="#download" class="btn btn-primary" style="padding:.55rem 1.1rem">Get the app</a>
-      </nav>
-    </div>
-  </header>
+<header class="nav" id="nav">
+  <div class="shell nav-in">
+    <a class="brand" href="index.html" aria-label="SogoApp home"><img src="assets/wordmark.png" alt="SogoApp"></a>
+    <nav class="nav-links">
+      <a href="#messaging">Messaging</a>
+      <a href="#live">Live</a>
+      <a href="#wallet">Wallet</a>
+      <a href="#privacy">Privacy</a>
+      <a href="support">Support</a>
+    </nav>
+    <a class="btn btn-primary" href="#get">Get the app</a>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">🔒 Private by design</span>
-        <h1>Talk, call &amp; go <span class="grad-text">live</span> — privately.</h1>
-        <p class="lead">SogoApp brings secure messaging, crystal-clear voice &amp; video calls, live streaming and status together in one beautifully simple app.</p>
-        <div class="hero-cta" id="download">
-          <a href="#" class="btn btn-primary btn-lg">▶ Google Play</a>
-          <a href="#" class="btn btn-ghost btn-lg"> App Store</a>
-        </div>
-        <p class="hero-note">Free to download · End-to-end encrypted in transit · No ads in your chats.</p>
+<!-- ── Hero ───────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="shell hero-in">
+    <div class="rv">
+      <p class="eyebrow">Messaging · Calls · Live · Wallet</p>
+      <h1 class="h1">Chat, go <span class="live">live</span><br>&amp; <span class="earn">earn</span>.</h1>
+      <p class="lede">Private one-to-one and group messaging, crystal-clear voice and video calls,
+        status updates, live streaming with gifts, and a coin wallet you can withdraw from —
+        all in one app.</p>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.org.sogo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13.9 12 3.6 21.7A2 2 0 0 1 3 20.3V3.7a2 2 0 0 1 .6-1.4Zm11.8 8.3L5.6 1.4l10.1 5.8 2.2 2.1-2.5 1.3Zm2.5 2.8-2.2 2.1L5.6 22.6l9.8-9.2 2.5 1.3Zm2.4-2.1c1 .6 1 1.8 0 2.4l-2 1.1-2.5-2.3 2.5-2.3 2 1.1Z"/></svg>
+          <span class="stack"><small>Get it on</small>Google&nbsp;Play</span>
+        </a>
+        <a class="btn btn-ghost" href="https://apps.apple.com/app/id6760476602" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.3-2.5 1.3-2.5s-2.5-1-2.5-3.6ZM14.2 5.3c.6-.8 1-1.9.9-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3Z"/></svg>
+          <span class="stack"><small>Download on the</small>App&nbsp;Store</span>
+        </a>
       </div>
 
-      <div class="phone" aria-hidden="true">
-        <div class="screen">
-          <div class="topbar">
-            <div class="av"></div>
-            <div><b>Ayesha</b><small>online</small></div>
-          </div>
-          <div class="chat">
-            <div class="bubble in">Are you free for a video call? 📹</div>
-            <div class="bubble out">Yes! Calling you now <span class="tick">✓✓</span></div>
-            <div class="bubble in">And share your live location 📍</div>
-            <div class="bubble out">On my way 🚗 <span class="tick">✓✓</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section id="features">
-    <div class="container">
-      <div class="section-head">
-        <h2>Everything you need to stay connected</h2>
-        <p>One app for messaging, calling, live streaming and moments — thoughtfully built around your privacy.</p>
-      </div>
-      <div class="features">
-        <div class="card">
-          <div class="ic">💬</div>
-          <h3>Private chats</h3>
-          <p>Fast 1:1 and group messaging with photos, videos, voice notes, replies and reactions.</p>
-        </div>
-        <div class="card">
-          <div class="ic">📞</div>
-          <h3>HD voice &amp; video calls</h3>
-          <p>Reliable 1:1 and group calls with call waiting, picture-in-picture and screen sharing.</p>
-        </div>
-        <div class="card">
-          <div class="ic">📡</div>
-          <h3>Go Live with co-hosts</h3>
-          <p>Broadcast to your audience and invite up to 10 co-hosts on stage in real time.</p>
-        </div>
-        <div class="card">
-          <div class="ic">📍</div>
-          <h3>Live location</h3>
-          <p>Share your real-time location inside a chat for a set time — you're always in control.</p>
-        </div>
-        <div class="card">
-          <div class="ic">👁️</div>
-          <h3>View once &amp; capture protection</h3>
-          <p>Send disappearing photos and videos, with screenshot protection during sensitive calls.</p>
-        </div>
-        <div class="card">
-          <div class="ic">✨</div>
-          <h3>Status &amp; moments</h3>
-          <p>Share updates with your contacts and see what the people you care about are up to.</p>
-        </div>
+      <div class="trust">
+        <span class="chip">Free to download</span>
+        <span class="chip">No ads in your chats</span>
+        <span class="chip">iOS &amp; Android</span>
       </div>
     </div>
-  </section>
 
-  <!-- PRIVACY -->
-  <section id="privacy" style="background:var(--surface-2); border-block:1px solid var(--line);">
-    <div class="container hero-grid" style="align-items:center">
-      <div>
-        <span class="eyebrow">🛡️ Your data, your rules</span>
-        <h2>Built for privacy from the ground up</h2>
-        <p>Your conversations, media and calls are encrypted in transit. You choose what you share — and you can delete your account and data any time, right from the app.</p>
-        <ul style="list-style:none; padding:0; margin:.5rem 0 0;">
-          <li style="margin-bottom:.6rem;">✅ Encrypted in transit (TLS &amp; DTLS-SRTP for calls)</li>
-          <li style="margin-bottom:.6rem;">✅ Sign in with just your phone number</li>
-          <li style="margin-bottom:.6rem;">✅ Full account &amp; data deletion whenever you want</li>
-        </ul>
-        <div style="margin-top:1.4rem; display:flex; gap:.8rem; flex-wrap:wrap;">
-          <a href="privacy-policy" class="btn btn-ghost">Privacy Policy</a>
-          <a href="delete-account" class="btn btn-ghost">Delete your account</a>
-        </div>
+    <div class="device rv" data-glow="green">
+      <img src="assets/shots/chat.jpg" width="499" height="860" alt="A SogoApp one-to-one chat" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>1:1 &amp; group chat</span><span>HD voice calls</span><span>Video calls</span>
+    <span>Status updates</span><span>Live streaming</span><span>Gifts &amp; coins</span>
+    <span>Screenshot protection</span><span>Withdraw earnings</span>
+    <span>1:1 &amp; group chat</span><span>HD voice calls</span><span>Video calls</span>
+    <span>Status updates</span><span>Live streaming</span><span>Gifts &amp; coins</span>
+    <span>Screenshot protection</span><span>Withdraw earnings</span>
+  </div>
+</div>
+
+<!-- ── Features ───────────────────────────────────────────────────────── -->
+<section class="feat" id="messaging" data-accent="green">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">01 / MESSAGING</p>
+      <h2 class="kicker">Where security meets <b>seamless communication</b>.</h2>
+      <p class="lede">Fast, reliable messaging that keeps up with the conversation — read receipts,
+        replies, media, voice notes and disappearing view-once photos.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Delivery and read receipts you can actually trust</li>
+        <li><span class="dot"></span>View-once photos and videos that leave nothing behind</li>
+        <li><span class="dot"></span>Voice notes, documents, location and contact sharing</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="green"><img src="assets/shots/chat.jpg" width="499" height="860" alt="SogoApp chat screen" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feat flip" data-accent="blue">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">02 / GROUPS</p>
+      <h2 class="kicker">Connect your circle with <b>secure group messaging</b>.</h2>
+      <p class="lede">Family, work, the football chat — organise every conversation with filters for
+        unread, favourites, groups and archived.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Filter by unread, favourites, groups or archived</li>
+        <li><span class="dot"></span>Group calls with everyone on the thread</li>
+        <li><span class="dot"></span>Search across every conversation instantly</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="blue"><img src="assets/shots/Group-chat.jpg" width="499" height="860" alt="SogoApp group chat list" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feat" data-accent="green">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">03 / CALLS</p>
+      <h2 class="kicker">Your calls deserve <b>real privacy</b>. <span class="g">No screenshots. No screen recording.</span></h2>
+      <p class="lede">Turn on capture protection for a video call and the other side simply cannot
+        screenshot or screen-record it. One tap, and it holds for the whole call.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Screenshot &amp; screen-recording blocking on video calls</li>
+        <li><span class="dot"></span>Camera-intrusion detection warns you if a lens is pointed at the screen</li>
+        <li><span class="dot"></span>Multi-region call servers for a steadier connection</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="green"><img src="assets/shots/video-call.jpg" width="499" height="860" alt="SogoApp video call with capture protection on" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feat flip" id="live" data-accent="red">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">04 / LIVE</p>
+      <h2 class="kicker">Go <b>live</b> and share every moment.</h2>
+      <p class="lede">Start a stream in a tap. Viewers join, comment and send gifts in real time —
+        and you can bring co-hosts up on screen with you.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Live viewer count, comments and reactions</li>
+        <li><span class="dot"></span>Gifts from your audience while you stream</li>
+        <li><span class="dot"></span>Invite co-hosts into the broadcast</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="red"><img src="assets/shots/Live.jpg" width="499" height="860" alt="A SogoApp live stream" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feat" id="wallet" data-accent="gold">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">05 / WALLET</p>
+      <h2 class="kicker">One <b>wallet</b> for your coins, gifts and withdrawals.</h2>
+      <p class="lede">Coins are bought through the App&nbsp;Store or Google&nbsp;Play and sent as gifts.
+        Gifts you receive become diamonds, and diamonds can be withdrawn to your bank account.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Buy coins securely through Apple or Google</li>
+        <li><span class="dot"></span>Every gift, reward and withdrawal in one ledger</li>
+        <li><span class="dot"></span>Withdraw to a local bank account once you reach the minimum</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="gold"><img src="assets/shots/Wallet.jpg" width="499" height="860" alt="SogoApp wallet with coin and diamond balances" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="feat flip" data-accent="gold">
+  <div class="shell feat-in">
+    <div class="copy rv">
+      <p class="num">06 / REACH</p>
+      <h2 class="kicker">Promote your <b>status</b> and get noticed.</h2>
+      <p class="lede">Put coins behind a status and it reaches beyond your own contacts for 24 hours.
+        You choose the budget and who is allowed to see it.</p>
+      <ul class="bullets">
+        <li><span class="dot"></span>Pick a budget — more coins, more reach</li>
+        <li><span class="dot"></span>Show it to everyone, or choose your audience</li>
+        <li><span class="dot"></span>Boosts run for 24 hours and are shown only to adults</li>
+      </ul>
+    </div>
+    <div class="device rv" data-glow="gold"><img src="assets/shots/status-boost.jpg" width="499" height="860" alt="SogoApp promote-your-status screen" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ── Privacy — deliberately plain. No E2EE claim. ────────────────────── -->
+<section class="privacy" id="privacy">
+  <div class="shell">
+    <div class="rv" style="max-width:640px">
+      <p class="eyebrow">Privacy</p>
+      <h2 class="kicker">Straight answers about <b>your data</b>.</h2>
+      <p class="lede">We would rather tell you exactly what is protected than use a word that sounds
+        better than the truth.</p>
+    </div>
+
+    <div class="pcards">
+      <div class="card rv">
+        <h3><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="#16E07F" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Encrypted in transit</h3>
+        <p>Messages and calls are encrypted while they travel between your device and our servers,
+          using TLS for data and DTLS-SRTP for call media.</p>
       </div>
-      <div class="center">
-        <div style="font-size:clamp(4rem,12vw,8rem); line-height:1;">🔐</div>
+      <div class="card rv">
+        <h3><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="#16E07F" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Staff can't read your chats</h3>
+        <p>Our admin tools show message metadata only — who and when, never the contents. Reading a
+          message is possible only when someone reports it, and every such access is logged.</p>
+      </div>
+      <div class="card rv">
+        <h3><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="#16E07F" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Your history stays on your device</h3>
+        <p>Chat history lives in the app on your phone. Delete the app or your account and it goes
+          with it.</p>
+      </div>
+      <div class="card rv">
+        <h3><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="#16E07F" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>No ads inside your chats</h3>
+        <p>Your conversations are not an advertising surface. Promoted posts appear only in the
+          status feed, and they are labelled.</p>
       </div>
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section>
-    <div class="container">
-      <div class="cta-band">
-        <h2>Get SogoApp today</h2>
-        <p>Join your friends and family on a faster, more private way to chat, call and go live.</p>
-        <a href="#" class="btn btn-primary btn-lg">Download for Android</a>
+    <div class="note rv">
+      <p><b>What we don't claim.</b> SogoApp is <b>not end-to-end encrypted</b>. Your messages are
+      encrypted in transit and stored on our servers, and a lawful request can compel us to disclose
+      data. The person you are talking to can also still screenshot what you send them, unless you
+      use view-once media or turn on capture protection. You can read the full detail in the app
+      under <b>Settings → Encryption</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Get the app ────────────────────────────────────────────────────── -->
+<section class="band" id="get">
+  <div class="shell rv">
+    <img class="band-icon" src="assets/icon.png" alt="" width="78" height="78">
+    <h2 class="kicker" style="text-align:center">Get <b>SogoApp</b>.</h2>
+    <p class="lede" style="margin-inline:auto; text-align:center">Free to download on iPhone and Android.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.org.sogo" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.3 13.9 12 3.6 21.7A2 2 0 0 1 3 20.3V3.7a2 2 0 0 1 .6-1.4Zm11.8 8.3L5.6 1.4l10.1 5.8 2.2 2.1-2.5 1.3Zm2.5 2.8-2.2 2.1L5.6 22.6l9.8-9.2 2.5 1.3Zm2.4-2.1c1 .6 1 1.8 0 2.4l-2 1.1-2.5-2.3 2.5-2.3 2 1.1Z"/></svg>
+        <span class="stack"><small>Get it on</small>Google&nbsp;Play</span>
+      </a>
+      <a class="btn btn-ghost" href="https://apps.apple.com/app/id6760476602" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.3-2.5 1.3-2.5s-2.5-1-2.5-3.6ZM14.2 5.3c.6-.8 1-1.9.9-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3Z"/></svg>
+        <span class="stack"><small>Download on the</small>App&nbsp;Store</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="foot-in">
+      <a class="brand" href="index.html"><img src="assets/wordmark.png" alt="SogoApp"></a>
+      <div class="fcol">
+        <strong>Product</strong>
+        <a href="#messaging">Messaging</a><a href="#live">Live</a><a href="#wallet">Wallet</a>
+      </div>
+      <div class="fcol">
+        <strong>Legal</strong>
+        <a href="privacy-policy">Privacy Policy</a><a href="terms-of-service">Terms of Service</a>
+      </div>
+      <div class="fcol">
+        <strong>Help</strong>
+        <a href="support">Support</a><a href="delete-account">Delete your account</a>
       </div>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="col" style="max-width:280px;">
-          <a href="index.html" class="brand" style="margin-bottom:12px;"><span class="mark">S</span> Sogo<span style="color:var(--blue)">App</span></a>
-          <p style="color:var(--muted); font-size:.92rem;">Private messaging, calling and live streaming — reimagined.</p>
-        </div>
-        <div class="col">
-          <h4>Product</h4>
-          <a href="#features">Features</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#download">Download</a>
-        </div>
-        <div class="col">
-          <h4>Legal</h4>
-          <a href="privacy-policy">Privacy Policy</a>
-          <a href="terms-of-service">Terms of Service</a>
-          <a href="delete-account">Delete Account</a>
-        </div>
-        <div class="col">
-          <h4>Support</h4>
-          <a href="support">Help &amp; Contact</a>
-          <a href="mailto:support@sogoappusa.com">support@sogoappusa.com</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 SogoApp. All rights reserved.</span>
-        <span>Made with care for your privacy.</span>
-      </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Sogoapp LLC. All rights reserved.</span>
+      <span>Apple and App Store are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</span>
     </div>
-  </footer>
+  </div>
+</footer>
 
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Nav gains its backdrop only once the hero has moved under it.
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('stuck', scrollY > 12), {passive:true});
+
+// Reveal on scroll. Deliberately NOT IntersectionObserver: during build-out a
+// default-options IO refused to fire on an element sitting 203px from the top of
+// an 827px viewport, which would have left whole sections invisible. A rect check
+// on scroll cannot fail that way, and rAF keeps it to one measurement per frame.
+var els = [].slice.call(document.querySelectorAll('.rv'));
+var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!reduce && els.length) {
+  document.documentElement.classList.add('anim');
+  els.forEach(function (el, i) { el.style.transitionDelay = (i % 3) * 60 + 'ms'; });
+
+  var ticking = false;
+  function show() {
+    ticking = false;
+    for (var k = 0; k < els.length; k++) {
+      var el = els[k];
+      if (el.classList.contains('in')) continue;
+      if (el.getBoundingClientRect().top < innerHeight * 0.9) el.classList.add('in');
+    }
+  }
+  function queue() { if (!ticking) { ticking = true; requestAnimationFrame(show); } }
+
+  addEventListener('scroll', queue, { passive: true });
+  addEventListener('resize', queue);
+  addEventListener('load', show);
+  show();
+
+  // Last resort: if scroll events never arrive, drop the whole animation layer so
+  // every section is readable. Invisible to anyone who has been scrolling normally.
+  setTimeout(function () { document.documentElement.classList.remove('anim'); }, 6000);
+}
+</script>
 </body>
 </html>
