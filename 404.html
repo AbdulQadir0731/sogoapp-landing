@@ -1,2 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found — SogoApp</title><link rel="stylesheet" href="/assets/style.css"></head>
-<body><main class="legal"><div class="container wrap center"><h1>404</h1><p>Sorry, that page doesn't exist.</p><p><a class="btn btn-primary" href="/">Back to home</a></p></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found — SogoApp</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+/* 🔴 GitHub Pages has no path routing: /u/<id> matches no file, so Pages serves
+   THIS page. Share links are path-form (/u/<id>, /invite/<code>, /qr/<token>,
+   /call/<id>), so before showing a 404 we forward them to the page that can
+   render them, carrying the id in a query the static page can read.
+   Runs before paint so a real share link never flashes "404" at the visitor. */
+(function () {
+  var p = location.pathname.split("/").filter(Boolean);
+  if (p.length >= 2) {
+    var kind = p[0], id = p[1];
+    var to = { u: "/u/", invite: "/invite/" }[kind];
+    if (to) { location.replace(to + "?id=" + encodeURIComponent(id)); return; }
+    if (kind === "qr" || kind === "call" || kind === "join") {
+      location.replace("/open/?k=" + kind + "&id=" + encodeURIComponent(id)); return;
+    }
+  }
+})();
+</script>
+<style>.nf{min-height:calc(100vh - 68px); display:flex; align-items:center; justify-content:center; text-align:center}</style>
+</head>
+<body>
+<div class="room"></div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="SogoApp"><img src="/assets/wordmark.png" alt="SogoApp"></a>
+    <a class="btn btn-p" href="/">Home</a>
+  </div>
+</header>
+<main class="nf">
+  <div class="wrap">
+    <p class="lbl">404</p>
+    <h1 class="h1" style="font-size:34px">That page doesn't exist</h1>
+    <p class="p" style="margin-top:10px">The link may be old or mistyped.</p>
+    <p style="margin-top:22px"><a class="btn btn-p" href="/">Back to home</a></p>
+  </div>
+</main>
+</body>
+</html>

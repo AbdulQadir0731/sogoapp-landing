@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open in SogoApp</title>
+<meta name="description" content="Message this person on SogoApp — free on iOS and Android.">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/icon.png"><link rel="apple-touch-icon" href="/assets/icon.png">
+<meta property="og:title" content="Message me on SogoApp">
+<meta property="og:description" content="SogoApp — messaging, calls, group chats and live streaming.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://app.sogoapps.com/assets/shots/chat.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .lp{min-height:calc(100vh - 68px); display:flex; align-items:center; justify-content:center; padding:40px 0}
+  .lp-in{width:min(460px,calc(100% - 48px)); text-align:center}
+  .av{width:104px; height:104px; border-radius:50%; margin:0 auto 20px; overflow:hidden;
+      display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.06);
+      border:1px solid var(--line); font-family:var(--f-d); font-size:38px; font-weight:600}
+  .av img{width:100%; height:100%; object-fit:cover}
+  .lp h1{font-size:30px; margin-bottom:6px}
+  .lp .handle{font-family:var(--f-m); font-size:13px; color:var(--tx-3); margin:0 0 10px}
+  .lp .about{color:var(--tx-2); font-size:15px; margin:0 0 4px}
+  .acts{display:flex; flex-direction:column; gap:10px; margin-top:26px}
+  .acts .btn{justify-content:center}
+  .stores{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:14px}
+  .tiny{color:var(--tx-3); font-size:12.5px; margin-top:22px}
+</style>
+</head>
+<body>
+<div class="room"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="SogoApp"><img src="/assets/wordmark.png" alt="SogoApp"></a>
+    <nav class="nav-links"><a href="/support">Support</a><a href="/privacy-policy">Privacy</a></nav>
+    <a class="btn btn-p" href="/#get">Get the app</a>
+  </div>
+</header>
+
+<main class="lp">
+  <div class="lp-in">
+    <div class="av"><img id="avatarImg" alt="" style="display:none"><span id="avatarText">S</span></div>
+
+    <!-- Default content: correct even if the network call never returns. -->
+    <div id="generic">
+      <h1>Message me on SogoApp</h1>
+      <p class="about">Messaging, voice and video calls, group chats and live streaming.</p>
+    </div>
+
+    <div id="card" style="display:none">
+      <h1 id="name">SogoApp</h1>
+      <p class="handle" id="handle" style="display:none"></p>
+      <p class="about" id="about" style="display:none"></p>
+    </div>
+
+    <div id="missing" style="display:none">
+      <h1>Open in SogoApp</h1>
+      <p class="about">This link has no profile in it. Get the app and search for the person instead.</p>
+    </div>
+
+    <div class="acts">
+      <a class="btn btn-p" id="open" href="#">Open in SogoApp</a>
+      <div class="stores">
+        <a class="btn btn-g" href="https://apps.apple.com/app/id6760476602">App Store</a>
+        <a class="btn btn-g" href="https://play.google.com/store/apps/details?id=com.org.sogo">Google Play</a>
+      </div>
+    </div>
+
+    <p class="tiny">Don't have SogoApp yet? Install it, sign in, and this link will open the chat.</p>
+  </div>
+</main>
+
+<script src="/assets/deeplink.js"></script>
+<script>SogoLink.profile();</script>
+</body>
+</html>
