@@ -69,14 +69,30 @@
     if (!isAndroid() && !isIOS()) { return; }          // desktop: the store buttons are already there
     if (isAndroid() && isChromeLike()) { location.href = androidIntentUrl(kind, id); return; }
     var store = isIOS() ? APP_STORE : PLAY_STORE;
+    // 🔴 THE STORE IS THE FALLBACK FOR "NOTHING TOOK THE URL", NOT A TIMER RACE
+    //    (2026-09-20). With the app installed, iOS Safari sometimes needed more
+    //    than the old 1.4 s to hand over — so the app opened AND the page then
+    //    jumped to the App Store behind it. Three signals now count as "the app
+    //    took it": visibilitychange→hidden, pagehide, and window blur; the wait
+    //    is 2.5 s; and the redirect is skipped if the page is not visible at
+    //    that moment. Re-tapping the button after a redirect is harmless.
     var left = false;
-    function onHide() { if (document.hidden) left = true; }
-    document.addEventListener("visibilitychange", onHide);
+    function gone() { left = true; }
+    function onVis() { if (document.hidden) left = true; }
+    document.addEventListener("visibilitychange", onVis);
+    window.addEventListener("pagehide", gone);
+    window.addEventListener("blur", gone);
+    var started = Date.now();
     location.href = appUrl(kind, id);
     setTimeout(function () {
-      document.removeEventListener("visibilitychange", onHide);
-      if (!left && !document.hidden) location.href = store;
-    }, 1400);
+      document.removeEventListener("visibilitychange", onVis);
+      window.removeEventListener("pagehide", gone);
+      window.removeEventListener("blur", gone);
+      // A suspended tab wakes with the timer long overdue — that is the app
+      // having been in front, not the app being absent.
+      if (Date.now() - started > 4000) return;
+      if (!left && document.visibilityState === "visible") location.href = store;
+    }, 2500);
   }
 
   function el(id) { return document.getElementById(id); }
