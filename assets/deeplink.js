@@ -14,6 +14,17 @@
  *    Android  credail://  (AndroidManifest still claims it; `sogo://` handles only /training)
  *    iOS      sogo://     (Info.plist registers `sogo` only; `credail` is not registered)
  * Do not "modernise" the Android one until a build ships that routes sogo://u.
+ *
+ * 🔴 WHAT "OPEN IN SOGOAPP" OPENS (2026-09-20): the CHAT with the person. This page
+ * is titled "Message me on SogoApp" and promised "this link will open the chat" —
+ * while Android landed on the profile and iOS did nothing at all (its router had
+ * no consumer for `sogo://profile`). Both apps now route /u/<id> to the 1:1 chat:
+ *    Android  credail://u/<id>   — old builds still open the profile, new ones the chat
+ *    iOS      sogo://u/<id>      — old builds ignore it exactly as they ignored the old
+ *                                  form; new ones open the chat
+ * On Android Chrome the app is entered through an intent:// URL with the Play page as
+ * `S.browser_fallback_url`: installed ⇒ the app, not installed ⇒ Play, no timer race.
+ * Other browsers keep the scheme + visibility timer.
  */
 (function () {
   "use strict";
@@ -39,16 +50,24 @@
 
   function appUrl(kind, id) {
     if (isAndroid()) return "credail://" + kind + "/" + encodeURIComponent(id);
-    // iOS registers `sogo` only, and its router knows profile/group/join — not `u`.
-    if (kind === "u") return "sogo://profile/" + encodeURIComponent(id);
+    // iOS registers `sogo` only. `u` opens the chat (2026-09-20 builds and later).
     if (kind === "invite") return "sogo://join/" + encodeURIComponent(id);
     return "sogo://" + kind + "/" + encodeURIComponent(id);
+  }
+
+  /** Chrome / Samsung Internet on Android: one URL that opens the app or falls back to Play. */
+  function isChromeLike() { return /Chrome|CriOS|SamsungBrowser/i.test(ua()) && !/Firefox|FxiOS|OPR\//i.test(ua()); }
+  function androidIntentUrl(kind, id) {
+    return "intent://" + kind + "/" + encodeURIComponent(id)
+      + "#Intent;scheme=credail;package=com.org.sogo;S.browser_fallback_url="
+      + encodeURIComponent(PLAY_STORE) + ";end";
   }
 
   /** Try the app, fall back to the right store if nothing took over the page. */
   function openInApp(kind, id) {
     if (!id) { location.href = isIOS() ? APP_STORE : PLAY_STORE; return; }
     if (!isAndroid() && !isIOS()) { return; }          // desktop: the store buttons are already there
+    if (isAndroid() && isChromeLike()) { location.href = androidIntentUrl(kind, id); return; }
     var store = isIOS() ? APP_STORE : PLAY_STORE;
     var left = false;
     function onHide() { if (document.hidden) left = true; }
@@ -89,6 +108,8 @@
       var name = u.displayName || u.username || "";
       if (!name) throw new Error("no profile in response");
       text("name", name);
+      var first = String(name).trim().split(/\s+/)[0];
+      if (btn && first) btn.textContent = "Message " + first + " on SogoApp";
       if (u.username) { text("handle", "@" + u.username); show("handle"); }
       if (u.about) { text("about", u.about); show("about"); }
       var pic = u.profilePicture || u.profile_picture;
