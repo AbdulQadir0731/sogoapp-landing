@@ -115,14 +115,23 @@
   /* ── /u/<identifier> — a person ───────────────────────────────────────── */
   async function profile() {
     var id = readTarget("u");
+    // What the app is handed. Starts as the link's identifier (a username or a
+    // phone) and is upgraded to the PHONE once the profile resolves: a chat is
+    // keyed by phone, the phone is the same identity on every server, and an
+    // app that receives it opens the chat with no lookup of its own. A username
+    // stays a username only when this page could not resolve it — then the app
+    // resolves it against its own server, which is the right server to ask.
+    var target = id;
     var btn = el("open");
-    if (btn) btn.addEventListener("click", function (e) { e.preventDefault(); openInApp("u", id); });
+    if (btn) btn.addEventListener("click", function (e) { e.preventDefault(); openInApp("u", target); });
     if (!id) { hide("generic"); show("missing"); return; }
     try {
       var data = await getJSON(API + "/dl/user/" + encodeURIComponent(id));
       var u = (data && (data.user || data.data)) || data || {};
       var name = u.displayName || u.username || "";
       if (!name) throw new Error("no profile in response");
+      var phone = String(u.phone || u.phone_number || "").replace(/[^0-9]/g, "");
+      if (phone.length >= 7) target = phone;
       text("name", name);
       var first = String(name).trim().split(/\s+/)[0];
       if (btn && first) btn.textContent = "Message " + first + " on SogoApp";
