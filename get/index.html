@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get SogoApp — Chat, Go Live & Earn</title>
+<meta name="description" content="Download SogoApp free on Android and iPhone. Chat, calls, LIVE streaming, live classes and gifts in one app.">
+<meta property="og:title" content="Get SogoApp">
+<meta property="og:description" content="Chat, calls, LIVE, training and gifts — one free app.">
+<meta property="og:image" content="https://app.sogoapps.com/assets/og.png">
+<style>
+  :root { --bg:#0b0b12; --fg:#fff; --mut:#b8b8c8; --btn:#1f1f2e; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:420px; padding:32px 16px; text-align:center; }
+  h1 { font-size:26px; margin:0 0 8px; }
+  p { color:var(--mut); margin:0 0 24px; line-height:1.5; }
+  a.store { display:block; margin:12px 0; padding:16px; border-radius:14px; background:var(--btn);
+            color:var(--fg); text-decoration:none; font-weight:600; font-size:17px; border:1px solid #33334a; }
+  small { color:var(--mut); }
+</style>
+</head>
+<body>
+<main>
+  <h1>SogoApp</h1>
+  <p>Chat, calls, LIVE streaming, live classes and gifts — one free app.</p>
+  <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.org.sogo">Get it on Google Play</a>
+  <a class="store" id="ios" href="https://apps.apple.com/app/id6760476602">Download on the App Store</a>
+  <small id="msg">Opening your app store…</small>
+</main>
+<script>
+(function () {
+  // Ad links arrive as /get/?c=<campaign>&a=<ad>. Android gets a Play link whose install
+  // referrer carries the same tags, so Play Console attributes installs per campaign.
+  var q = new URLSearchParams(location.search);
+  var clean = function (v) { return (v || "").replace(/[^A-Za-z0-9_-]/g, "").slice(0, 40); };
+  var c = clean(q.get("c")) || "direct", a = clean(q.get("a")) || "none";
+  var src = clean(q.get("s")) || "meta";
+  var ref = "utm_source=" + src + "&utm_medium=paid&utm_campaign=" + c + "&utm_content=" + a;
+  var play = "https://play.google.com/store/apps/details?id=com.org.sogo&referrer=" + encodeURIComponent(ref);
+  var ios = "https://apps.apple.com/app/id6760476602?ct=" + encodeURIComponent(c + "-" + a);
+  document.getElementById("play").href = play;
+  document.getElementById("ios").href = ios;
+  var ua = navigator.userAgent || "";
+  var target = /android/i.test(ua) ? play : (/iphone|ipad|ipod/i.test(ua) ? ios : null);
+  if (target) { setTimeout(function () { location.replace(target); }, 250); }
+  else { document.getElementById("msg").textContent = "Choose your store above."; }
+})();
+</script>
+</body>
+</html>
