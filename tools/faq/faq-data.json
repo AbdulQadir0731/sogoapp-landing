@@ -1,0 +1,2375 @@
+[
+ {
+  "id": "whats-new",
+  "icon": "sparkles",
+  "title": "What's New",
+  "blurb": "The latest features, in plain words.",
+  "new": true,
+  "items": [
+   {
+    "id": "wn-latest",
+    "question": "What's new in the latest SogoApp update?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Here's what the newest update adds. Some features switch on gradually, so if you don't see one yet, update the app and check again in a few days."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Feature",
+       "What it does"
+      ],
+      "rows": [
+       [
+        "Make your own reels",
+        "Record with the camera (10 seconds to 3 minutes), or upload photos and videos from your gallery"
+       ],
+       [
+        "Sogo Looks",
+        "13 camera filters — swipe left or right on the camera to change look"
+       ],
+       [
+        "Text posts",
+        "Post words on a colourful background — great for questions and thoughts"
+       ],
+       [
+        "Sounds",
+        "Add a sound or record your own voiceover"
+       ],
+       [
+        "Comments with voice",
+        "Comment on reels with text or a voice note, reply and like comments"
+       ],
+       [
+        "People search",
+        "Tap 🔍 in Livestreamers to find people by name or @username"
+       ],
+       [
+        "@username",
+        "Choose your own @username so friends can find you"
+       ],
+       [
+        "Message requests",
+        "A first message from someone new waits as a request on your Messages screen"
+       ],
+       [
+        "Share reels",
+        "Send a reel link to WhatsApp and other apps, with a preview card"
+       ],
+       [
+        "Gifts on replays",
+        "Send a gift on a saved live, even after the live has ended"
+       ],
+       [
+        "Reel insights",
+        "See views, likes, comments and gifts on your own reels"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "wn-update",
+    "question": "How do I get the newest features?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the App Store (iPhone) or Google Play (Android).",
+       "Search for SogoApp and tap Update.",
+       "Open SogoApp again — new tabs and buttons appear once the update is installed."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "If a friend sees a feature you don't, you're probably on an older version. Updating fixes it."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "getting-started",
+  "icon": "flag.checkered",
+  "title": "Getting Started",
+  "blurb": "Create your account and get set up.",
+  "items": [
+   {
+    "id": "gs-register",
+    "question": "How do I create a Sogo account?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Signing up takes about a minute — all you need is your phone number."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open Sogo and tap Get Started on the welcome screen.",
+       "Your country is detected automatically — tap the flag to change it if needed.",
+       "Enter your phone number and tap Get OTP.",
+       "Enter the 6-digit code we text you to verify your number.",
+       "Add your name (and an optional photo) to finish your profile."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "If country detection doesn't kick in, just tap the flag and pick your country manually."
+     }
+    ]
+   },
+   {
+    "id": "gs-requirements",
+    "question": "What do I need to run Sogo?",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "Requirement",
+       "Details"
+      ],
+      "rows": [
+       [
+        "iPhone",
+        "iOS 17 or later"
+       ],
+       [
+        "Android",
+        "Android 7.0 or later"
+       ],
+       [
+        "Permissions",
+        "Camera, Microphone, Notifications, Photos (asked when needed)"
+       ],
+       [
+        "Network",
+        "Wi-Fi or mobile data for messages, calls and status"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Sogo only asks for a permission the first time a feature needs it — you can change these anytime in your phone's settings."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sign-in-otp",
+  "icon": "lock.shield",
+  "title": "Sign in & Verification",
+  "blurb": "Verify your number and sign in.",
+  "items": [
+   {
+    "id": "otp-verify",
+    "question": "How do I verify my phone number?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Enter the 6-digit code sent to your phone by SMS.",
+       "The code is filled and submitted automatically on most devices.",
+       "Tap Verify OTP if it doesn't continue on its own."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Didn't get a code? Wait for the Resend timer, then tap Resend OTP. Double-check the number and country code first."
+     }
+    ]
+   },
+   {
+    "id": "otp-after",
+    "question": "What happens after I verify?",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "If you're…",
+       "What happens next"
+      ],
+      "rows": [
+       [
+        "A returning user",
+        "You're signed in and taken straight to your chats."
+       ],
+       [
+        "A new user",
+        "You're taken to profile setup to add your name and photo."
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "profile",
+  "icon": "person.crop.circle",
+  "title": "Your Profile",
+  "blurb": "Set up and update your profile.",
+  "items": [
+   {
+    "id": "pf-complete",
+    "question": "How do I complete my profile?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Tap the avatar to add a photo (optional) — choose from your library.",
+       "Enter your First name (required).",
+       "Enter your Last name (required).",
+       "Add an Email (optional, but handy for account recovery).",
+       "Tap Complete to finish."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "A photo is optional — a colourful letter avatar is used until you add one."
+     }
+    ]
+   },
+   {
+    "id": "pf-photo",
+    "question": "How do I change my profile photo later?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Settings tab.",
+       "Tap your profile card at the top.",
+       "Tap your photo, choose a new image, then crop and confirm."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "The new photo uploads automatically and appears across your chats."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "messaging",
+  "icon": "message",
+  "title": "Chats & Messaging",
+  "blurb": "Start chats and use messaging features.",
+  "items": [
+   {
+    "id": "msg-start",
+    "question": "How do I start a new chat?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Search tab to find any Sogo contact, or",
+       "Open the Messages tab and tap the compose button.",
+       "Pick a contact to open the conversation and start typing."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "msg-features",
+    "question": "What can I do in a chat?",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "Feature",
+       "What it does"
+      ],
+      "rows": [
+       [
+        "Text",
+        "Send messages with typing indicators"
+       ],
+       [
+        "Media",
+        "Share photos, videos, files and voice notes"
+       ],
+       [
+        "Reactions",
+        "Long-press a message to react with an emoji"
+       ],
+       [
+        "Reply",
+        "Swipe a message to reply to it"
+       ],
+       [
+        "Edit",
+        "Edit your own message within 5 minutes of sending"
+       ],
+       [
+        "Delete",
+        "Delete a message for everyone"
+       ],
+       [
+        "Receipts",
+        "See when messages are delivered and read"
+       ],
+       [
+        "Wallpaper",
+        "Set a custom chat wallpaper"
+       ],
+       [
+        "View once",
+        "Send a photo or video that opens only once"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "msg-view-once",
+    "question": "How do view-once photos and videos work?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "View-once media lets you send a photo or video that can be opened only one time. After it's viewed it's gone — it isn't saved to the chat or the gallery."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Attach a photo or video in a chat.",
+       "Turn on View once before sending.",
+       "The other person can open it a single time; once they close it, it can't be reopened."
+      ]
+     },
+     {
+      "type": "warning",
+      "text": "Screenshots and screen recording are blocked while a view-once photo or video is open. View-once media also expires automatically if it's never opened."
+     }
+    ]
+   },
+   {
+    "id": "msg-manage",
+    "question": "How do I manage a conversation?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "From the Messages tab, swipe a chat or long-press it to:"
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Pin it to the top",
+       "Mute notifications",
+       "Archive it",
+       "Mark as read / unread",
+       "Clear messages (keep the chat, remove its messages)",
+       "Delete the chat"
+      ]
+     },
+     {
+      "type": "warning",
+      "text": "Deleting a chat or clearing messages can't be undone."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "calls",
+  "icon": "phone",
+  "title": "Voice & Video Calls",
+  "blurb": "Make and receive calls.",
+  "items": [
+   {
+    "id": "call-receive",
+    "question": "How do I receive a call?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Incoming calls ring with your phone's native call screen — even when Sogo is closed."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Accept to join the call.",
+       "Decline to dismiss it.",
+       "Unanswered calls end automatically after a short time."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "call-types",
+    "question": "What types of calls are there?",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "Type",
+       "Description"
+      ],
+      "rows": [
+       [
+        "Voice 🎙️",
+        "Audio-only 1-to-1 call"
+       ],
+       [
+        "Video 📹",
+        "Video call with your camera"
+       ],
+       [
+        "Group 👥",
+        "Multi-person voice or video call"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "call-controls",
+    "question": "What controls do I have during a call?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Mute / unmute your microphone",
+       "Turn your camera on / off (video calls)",
+       "Flip between front and rear camera",
+       "Toggle the speaker",
+       "Switch between speaker view and grid view (group calls)",
+       "See all participants",
+       "Turn on screenshot & recording protection for sensitive video calls"
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Tap the video area to show or hide the controls — they auto-hide after a few seconds."
+     }
+    ]
+   },
+   {
+    "id": "call-video-layout",
+    "question": "How do I change the video layout on a call?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "On a 1-to-1 video call you can choose who fills the screen and pop the call out of the app."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Tap the small self-view (your own camera) to swap it with the other person — whoever you tapped fills the screen.",
+       "Tap it again to swap back.",
+       "Your self-view is shown large enough to see yourself clearly while you talk."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Minimise a video call and it keeps playing in a small floating window (picture-in-picture) so you can use other apps — tap the window to return to the full call."
+     }
+    ]
+   },
+   {
+    "id": "call-waiting",
+    "question": "What happens if another call comes in while I'm already on a call?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Sogo has call waiting. A second incoming call rings while you're on the first."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Accept the new call — your current call ends and the new one starts.",
+       "Decline the new call, or just ignore it — your current call keeps going."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "You're only ever connected to one call at a time."
+     }
+    ]
+   },
+   {
+    "id": "call-screenshare",
+    "question": "Can I share my screen on a call?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "During a video call, open the call controls.",
+       "Tap Share Screen and confirm to start broadcasting your screen to the other people on the call.",
+       "Tap Stop to end screen sharing — it also stops automatically when the call ends."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "While you share your screen, everyone on the call sees what's on your device, so close anything private first."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "groups",
+  "icon": "person.3",
+  "title": "Groups",
+  "blurb": "Create and manage group chats.",
+  "items": [
+   {
+    "id": "grp-create",
+    "question": "How do I create a group?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "From the Messages tab, tap the compose button and choose New Group.",
+       "Enter a group name (and an optional description).",
+       "Add members from your contacts.",
+       "Tap Create — then invite more people from the group info screen."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "grp-members",
+    "question": "How do I manage group members?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Open the group, tap its name to open Group Info. As an admin you can:"
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Add members",
+       "Remove a member (long-press the member)",
+       "Make a member an admin, or remove admin",
+       "Edit the group name, photo and description"
+      ]
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Role",
+       "Can do"
+      ],
+      "rows": [
+       [
+        "Admin",
+        "Add/remove members, edit group, manage settings"
+       ],
+       [
+        "Member",
+        "Send messages, view media, leave the group"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "grp-call",
+    "question": "How do I start a group call?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the group chat.",
+       "Tap the call button in the top bar.",
+       "Choose a voice or video group call.",
+       "Everyone in the group is rung on their native call screen."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "grp-media",
+    "question": "How do I see media shared in a group?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the group chat and tap its name to open Group Info.",
+       "Tap Media.",
+       "Browse photos, videos and files shared in the group."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "status",
+  "icon": "circle.dashed",
+  "title": "Status (Updates)",
+  "blurb": "Post and view 24-hour status updates.",
+  "items": [
+   {
+    "id": "st-post",
+    "question": "How do I post a status?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Updates tab.",
+       "Tap My Status (or the + on your status ring).",
+       "Choose a text, photo or video status.",
+       "For video, trim it to the length you want (up to 30 seconds).",
+       "Add a caption if you like, then post — it uploads automatically."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Statuses disappear automatically after 24 hours."
+     },
+     {
+      "type": "tip",
+      "text": "Statuses are protected from screenshots and screen recording by default — you can turn this off when you create a status if you don't need it."
+     }
+    ]
+   },
+   {
+    "id": "st-view",
+    "question": "How do I view statuses?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Updates tab and tap a contact's status ring.",
+       "Photo statuses advance every few seconds; videos play in full.",
+       "Tap the right/left side to go forward or back.",
+       "Press and hold to pause.",
+       "On your own status, see who viewed it; swipe down to close."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Status ring colours:"
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Green ring — a new, unseen status",
+       "Grey ring — you've already viewed it"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "st-manage",
+    "question": "How do I manage or delete my status?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open your own status from the Updates tab.",
+       "See the view count and who viewed it.",
+       "Tap the trash icon to delete a status."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "st-capture-protection",
+    "question": "Can people screenshot my status?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "By default, Sogo blocks screenshots and screen recording while someone is viewing your status — their capture comes out blank."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "When you create a status, keep Protect from screenshots turned on (it's on by default).",
+       "Turn it off for that status if you don't need the protection."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Protection applies per status, so you can decide each time you post."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "live",
+  "icon": "dot.radiowaves.left.and.right",
+  "title": "Live Streaming",
+  "blurb": "Go live, watch streams, and send hearts & tips.",
+  "items": [
+   {
+    "id": "lv-tabs",
+    "question": "What's on the Live tab?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "The Live tab has three sections you can switch between at the top:"
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Section",
+       "What it shows"
+      ],
+      "rows": [
+       [
+        "Live",
+        "Public streams happening now — plus the button to go live yourself"
+       ],
+       [
+        "Trainings",
+        "Paid live trainings you host or have joined"
+       ],
+       [
+        "Invites",
+        "Trainings you've been invited to but haven't joined yet"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": "lv-golive",
+    "question": "How do I go live?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Live tab and stay on the Live section.",
+       "Tap Go Live.",
+       "Allow camera and microphone access the first time.",
+       "Your broadcast starts — viewers can join, chat and send hearts/gifts.",
+       "Tap End when you're done."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "You can flip the camera while live, and turn on screen-capture protection so viewers can't screenshot your stream (it's off by default)."
+     }
+    ]
+   },
+   {
+    "id": "lv-watch",
+    "question": "How do I watch a live stream?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Live tab → Live section.",
+       "Tap any stream that's live now to join it.",
+       "Or tap an \"is live\" notification to jump straight in."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "While watching you can chat, tap the heart to react, and send gifts to the host."
+     }
+    ]
+   },
+   {
+    "id": "lv-gifts",
+    "question": "How do hearts and tips work?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Tap the heart to send quick reactions that float up on screen.",
+       "Send a tip to the host from your wallet balance — tap the tip button, pick or enter an amount, and confirm.",
+       "Bigger tips play bigger celebration animations for everyone watching.",
+       "Tips a host receives are added to their earnings, which they can withdraw from the Wallet."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Low on balance? Tap Add money in the tip sheet (or Settings → Wallet) to top up."
+     }
+    ]
+   },
+   {
+    "id": "lv-cohosts",
+    "question": "How do co-hosts work in a live stream?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "As a host you can invite viewers up on stage to appear live alongside you."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "While you're live, open the viewers list.",
+       "Invite someone to join as a co-host — once they accept, their video and audio appear on the stream.",
+       "As the host you can mute or remove a co-host at any time."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "A stream can have several co-hosts on stage at once. Co-hosts leave the stage when you remove them or when they tap Leave."
+     }
+    ]
+   },
+   {
+    "id": "lv-notify",
+    "question": "How do I know when someone goes live?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "When someone you can see goes live, you get an \"is live\" notification — tap it to join their stream. Live streams also appear at the top of the Live tab while they're on."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "discover-reels",
+  "icon": "play.rectangle.on.rectangle",
+  "title": "Discover & Reels",
+  "blurb": "Watch, create and manage reels.",
+  "new": true,
+  "items": [
+   {
+    "id": "dr-what",
+    "question": "What is Discover?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Discover is where you watch people who are live right now and the reels people have posted. It's the **Livestreamers** tab at the bottom of the app."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "At the top",
+       "What it shows"
+      ],
+      "rows": [
+       [
+        "For You",
+        "Lives and reels from everyone who shares them publicly"
+       ],
+       [
+        "Following",
+        "Only lives and reels from people you follow"
+       ]
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Following empty? Tap Explore For You and tap Follow on people you like."
+     }
+    ]
+   },
+   {
+    "id": "dr-watch",
+    "question": "How do I watch reels?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the **Livestreamers** tab.",
+       "Swipe up for the next reel, swipe down to go back.",
+       "Double-tap the video to like it.",
+       "Tap the person's name at the top to open their profile."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Buttons on the right let you like, comment, message the creator, send a gift, share, and watch the full replay of a saved live. A LIVE NOW chip means that person is live at this moment — tap it to join."
+     }
+    ]
+   },
+   {
+    "id": "dr-post",
+    "question": "How do I make a reel with the camera?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open **Livestreamers** and tap **+** at the top (or **Create reel** on your profile).",
+       "Allow camera and microphone the first time.",
+       "Pick a length: 10s, 15s, 30s, 60s or 3m.",
+       "Tap the record button to start and stop — or press and hold to record while you hold. You can record several clips.",
+       "Tap ✓ to go to the editor, then tap Next.",
+       "Add a caption, choose who can watch, and tap **Post**."
+      ]
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Limit",
+       "Value"
+      ],
+      "rows": [
+       [
+        "Shortest reel",
+        "10 seconds"
+       ],
+       [
+        "Longest reel",
+        "3 minutes"
+       ],
+       [
+        "Caption",
+        "Up to 300 characters"
+       ]
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Use Flip, Flash and Timer (3 s or 10 s) on the side of the camera. Made a bad clip? Tap ⌫ twice to delete the last one."
+     },
+     {
+      "type": "note",
+      "text": "Your reel keeps uploading in the background — you'll see \"Posting your reel…\" and then \"Your reel is live\"."
+     }
+    ]
+   },
+   {
+    "id": "dr-upload",
+    "question": "Can I post photos or videos from my gallery?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "On the reel camera, tap **Upload** (bottom left).",
+       "Choose up to 12 photos and videos.",
+       "Each photo plays for 3 seconds in the reel.",
+       "Edit if you like, then tap Next and **Post**."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "The finished reel still has to be between 10 seconds and 3 minutes."
+     }
+    ]
+   },
+   {
+    "id": "dr-looks",
+    "question": "How do I use Sogo Looks (camera filters)?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Sogo Looks are 13 colour filters: Normal, Vivid, Golden, Ocean, Rose, Mint, Film, Fade, Vintage, Sepia, B&W, Noir and Bright."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "On the reel camera, tap **Filters** on the side.",
+       "Pick a look, or just swipe left or right on the camera preview to change it.",
+       "Use the slider to make the look stronger or softer."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "A gold dot on Filters means a look is on. You can also change the look later in the editor's Filters tab."
+     }
+    ]
+   },
+   {
+    "id": "dr-text",
+    "question": "How do I make a text post?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the reel camera and switch from **Camera** to **Text** at the bottom.",
+       "Type your message (up to 500 characters).",
+       "Choose a background, a font, the alignment and the text colour.",
+       "Choose how long it shows (10 to 30 seconds), then tap Next and **Post**."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "On Android, finish or delete any camera clips first — text mode is off while clips are waiting."
+     }
+    ]
+   },
+   {
+    "id": "dr-sounds",
+    "question": "How do I add a sound?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "On the reel camera, tap **Add sound** at the top (or the Sound tool in the editor).",
+       "Browse For you, Trending, Favourites or Recorded — or search.",
+       "Tap **Use** on the sound you want.",
+       "In the editor, pick the part of the sound you want to use."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "You can also record your own sound, or record a voiceover on top of your video."
+     },
+     {
+      "type": "tip",
+      "text": "With a sound added, use the Mic button on the camera to choose whether your own voice is recorded too."
+     }
+    ]
+   },
+   {
+    "id": "dr-save-live",
+    "question": "How do I save my live as a reel?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open **Livestreamers** and tap **Go Live**.",
+       "Keep **Save this live as a reel** turned on (it's on by default).",
+       "Go live. When you end, your live appears in Discover as a replay."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "The switch only shows when your live is for Everyone and shown in Discover. You can delete the replay later, like any reel."
+     },
+     {
+      "type": "tip",
+      "text": "Change the default in My profile → ⚙ Reels settings → Save my lives as reels."
+     }
+    ]
+   },
+   {
+    "id": "dr-privacy",
+    "question": "Who can see my reel?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "You choose for every reel, when you post it or later."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Choice",
+       "Who can watch"
+      ],
+      "rows": [
+       [
+        "Everyone",
+        "Anyone on SogoApp, in Discover"
+       ],
+       [
+        "Followers only",
+        "Only people who follow you"
+       ],
+       [
+        "Only me",
+        "Nobody else — kept just for you"
+       ]
+      ]
+     },
+     {
+      "type": "steps",
+      "items": [
+       "To change it later: open your reel, tap ⋯ (on Android, open it from your profile).",
+       "Tap **Who can watch** and pick a new option."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Screenshot and recording protection follows your account setting **Settings → Privacy → Screen Security**. When it's on, other people can't screenshot or record your reels."
+     },
+     {
+      "type": "tip",
+      "text": "Set the default for new reels in My profile → ⚙ Reels settings → New reels are visible to."
+     }
+    ]
+   },
+   {
+    "id": "dr-manage",
+    "question": "How do I delete a reel or change its cover?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open **Livestreamers** and tap your picture at the top to open **My profile** (or Settings → My reels).",
+       "Open the reel and tap ⋯ to see its actions.",
+       "Tap **Change cover** and drag to the moment you want, or **Edit title**.",
+       "To remove it, tap **Delete reel** and confirm."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "To delete several at once, tap **Select** on your profile, pick reels, then tap Delete. Ready to start over? My profile → ⚙ Reels settings → Delete all my reels."
+     },
+     {
+      "type": "warning",
+      "text": "Deleting a reel can't be undone. Use Download all my reels in Reels settings first if you want to keep copies."
+     }
+    ]
+   },
+   {
+    "id": "dr-insights",
+    "question": "How do I see how my reel is doing?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open one of your own reels.",
+       "Tap **Insights** on the right side (or 📊 in the full replay)."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "You'll see views, likes, hearts, comments and gifts, plus who sent gifts. Tap a comment to jump to that moment in the replay."
+     },
+     {
+      "type": "note",
+      "text": "Only you can see insights for your reels."
+     }
+    ]
+   },
+   {
+    "id": "dr-gifts",
+    "question": "Can I send gifts on reels?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open a saved live in Discover.",
+       "Tap the gold **Gift** button.",
+       "Pick a gift and send it — it uses coins from your Wallet."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "When a live has ended you'll see \"This live has ended\" with a **Send a gift** button, so you can still thank the host."
+     },
+     {
+      "type": "note",
+      "text": "Gifts work on saved lives. Reels made with the camera or gallery don't have a Gift button, and you can't gift your own reel."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "comments",
+  "icon": "bubble.left.and.bubble.right",
+  "title": "Comments",
+  "blurb": "Comment with text or your voice.",
+  "new": true,
+  "items": [
+   {
+    "id": "cm-open",
+    "question": "How do I comment on a reel?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Tap the 💬 comment button on the right of the reel. The reel pauses.",
+       "Type in **Add a comment…** and send."
+      ]
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Rule",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Length",
+        "Up to 500 characters"
+       ],
+       [
+        "Speed",
+        "One text comment every 3 seconds"
+       ],
+       [
+        "Per hour",
+        "Up to 60 comments"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Comments are separate from your chats — nothing you write here goes into anyone's messages."
+     }
+    ]
+   },
+   {
+    "id": "cm-voice",
+    "question": "How do I send a voice comment?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the comments on a reel.",
+       "Tap the 🎤 mic (on iPhone it shows when the text box is empty).",
+       "Speak — a timer shows how long you've recorded.",
+       "Tap ✓ to send, or ✕ to cancel."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Voice comments can be up to 1 minute and are sent automatically at 1:00. Very short ones (under half a second) aren't sent."
+     },
+     {
+      "type": "tip",
+      "text": "If nothing records, allow SogoApp to use the microphone in your phone's settings."
+     }
+    ]
+   },
+   {
+    "id": "cm-reply",
+    "question": "How do I reply to or like a comment?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Tap **Reply** under a comment, then type or record your reply.",
+       "Tap the ♡ heart on a comment to like it. Comments with the most likes show first.",
+       "Tap View replies to open a thread, and Hide replies to close it."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Replies are one level deep — replying to a reply adds yours to the same thread."
+     }
+    ]
+   },
+   {
+    "id": "cm-off",
+    "question": "How do I turn comments off on my reel?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open your reel and tap 💬 to open its comments.",
+       "Tap ⋯ at the top of the comments.",
+       "Tap **Turn comments off**. Tap again to turn them back on."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Viewers will see \"Comments are turned off\". You can still comment on your own reel."
+     },
+     {
+      "type": "tip",
+      "text": "On iPhone, the same switch is also in the ⋯ menu on the side of your reel."
+     }
+    ]
+   },
+   {
+    "id": "cm-delete-report",
+    "question": "How do I delete or report a comment?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Press and hold the comment.",
+       "Tap **Delete** to remove it, or **Report** to tell us about it.",
+       "For a report, pick a reason and send."
+      ]
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Who",
+       "Can delete"
+      ],
+      "rows": [
+       [
+        "You",
+        "Your own comments, anywhere"
+       ],
+       [
+        "Reel owner",
+        "Any comment on their reel"
+       ]
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "A comment that gets several reports is hidden automatically while we review it. You can also block someone so they can't comment on your reels."
+     },
+     {
+      "type": "note",
+      "text": "A deleted comment that already had replies stays as \"Comment deleted\" so the replies still make sense."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sharing",
+  "icon": "square.and.arrow.up",
+  "title": "Sharing Reels",
+  "blurb": "Send reels to friends and other apps.",
+  "new": true,
+  "items": [
+   {
+    "id": "sh-share",
+    "question": "How do I share a reel?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Tap **Share** on the right of the reel.",
+       "Pick an app in Send to — WhatsApp, Telegram, Messenger, Instagram, Snapchat, Messages/SMS — or tap More.",
+       "Or tap **Copy link** to paste it anywhere."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Only reels set to Everyone can be shared."
+     }
+    ]
+   },
+   {
+    "id": "sh-whatsapp",
+    "question": "What does my friend see on WhatsApp?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "The link shows a preview card with the reel's cover and the SogoApp logo. Tapping it opens the reel in SogoApp, or takes them to the App Store or Google Play if they don't have it yet."
+     },
+     {
+      "type": "tip",
+      "text": "On iPhone, WhatsApp drops text sent together with a video, so SogoApp copies the link for you — just paste it into your message."
+     }
+    ]
+   },
+   {
+    "id": "sh-video",
+    "question": "Can I save or share the video itself?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Tap **Share** on the reel.",
+       "Tap **Save video** or **Share video**."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Downloaded videos carry a SogoApp watermark."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Creators can always download their own reels.",
+       "Other people can download only when the creator allows screenshots and recording — otherwise you'll see \"The creator turned off downloads\". The link still works."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "search-username",
+  "icon": "magnifyingglass",
+  "title": "Search & @username",
+  "blurb": "Find people and get found.",
+  "new": true,
+  "items": [
+   {
+    "id": "su-search",
+    "question": "How do I find people on SogoApp?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the **Livestreamers** tab.",
+       "Tap 🔍 at the top.",
+       "Type at least 2 letters of a name or an @username."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Start with @ to search usernames only. Tap a person to open their profile and follow them."
+     },
+     {
+      "type": "note",
+      "text": "Phone numbers can't be searched — that protects everyone's number."
+     }
+    ]
+   },
+   {
+    "id": "su-who",
+    "question": "Who shows up in search?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Creators — people who share public or followers reels, or are live in Discover.",
+       "Anyone who has chosen their own @username and kept **Show me in search** on."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "People on the automatic user123456-style name don't appear unless they're creators. Blocked people never appear, in either direction."
+     }
+    ]
+   },
+   {
+    "id": "su-hide",
+    "question": "How do I hide from search?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open **Settings → Privacy**.",
+       "Turn off **Show me in search**."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "It's on by default. Turning it off removes you from search for people who don't have your number."
+     },
+     {
+      "type": "note",
+      "text": "If you post public reels or go live in Discover, people can still find you through your reels and lives."
+     }
+    ]
+   },
+   {
+    "id": "su-username",
+    "question": "How do I choose or change my @username?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "iPhone: open **Settings**, tap your profile card, then tap the username row.",
+       "Android: open **Settings** and tap **Set your @username** at the top.",
+       "Type a name — you'll see if it's available, plus a few suggestions.",
+       "Tap Save."
+      ]
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Rule",
+       "Detail"
+      ],
+      "rows": [
+       [
+        "Length",
+        "3 to 30 characters"
+       ],
+       [
+        "Characters",
+        "Letters, numbers and _ (underscore)"
+       ],
+       [
+        "Start",
+        "Must start with a letter"
+       ],
+       [
+        "Capitals",
+        "Saved in lower case — Ali_Khan becomes ali_khan"
+       ],
+       [
+        "Changes",
+        "Up to 5 changes a day"
+       ]
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "You can also pick one from the 🔍 search screen or when SogoApp asks \"Pick your @username\"."
+     }
+    ]
+   },
+   {
+    "id": "su-user123",
+    "question": "Why can't I use a name like user123456?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "\"user\" followed by numbers is the automatic name every new account gets, so it can't be chosen. Pick your own, like ali_khan."
+     },
+     {
+      "type": "paragraph",
+      "text": "Some names are reserved too, such as names starting with sogo, admin, support, official or help."
+     },
+     {
+      "type": "note",
+      "text": "Changed your username a lot today? You'll need to wait until tomorrow to change it again."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "follow",
+  "icon": "person.badge.plus",
+  "title": "Following",
+  "blurb": "Follow creators and handle requests.",
+  "new": true,
+  "items": [
+   {
+    "id": "fo-follow",
+    "question": "How do I follow someone?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Tap **Follow** on their reel, live or profile.",
+       "The button changes to **Requested**.",
+       "When they accept, it changes to **Following** and their reels appear in your Following tab."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Every follow is a request the other person accepts. Tap Requested to cancel your request, or Following to unfollow."
+     }
+    ]
+   },
+   {
+    "id": "fo-requests",
+    "question": "How do I accept or decline follow requests?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open your profile: iPhone — Settings → **My reels**; Android — tap your picture at the top of Livestreamers.",
+       "Tap **Follow requests**.",
+       "Tap **Accept & allow messages** or **Decline**. With 2 or more requests you'll also see Accept all."
+      ]
+     },
+     {
+      "type": "paragraph",
+      "text": "Accepting also lets the two of you chat. Declining is silent — the other person isn't told."
+     },
+     {
+      "type": "note",
+      "text": "Your profile shows how many followers you have and how many people you follow."
+     }
+    ]
+   },
+   {
+    "id": "fo-stop",
+    "question": "How do I stop someone following me?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Block them from their profile or a chat. Blocking removes the follow and stops their messages and calls."
+     },
+     {
+      "type": "note",
+      "text": "A separate \"remove follower\" button isn't available yet."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "message-requests",
+  "icon": "tray.and.arrow.down",
+  "title": "Message Requests & Your Number",
+  "blurb": "Who can message you, and who sees your number.",
+  "new": true,
+  "items": [
+   {
+    "id": "mr-what",
+    "question": "What is a message request?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "When someone you haven't connected with messages you for the first time, it arrives as a request instead of a normal chat. You decide whether to answer."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open the **Messages** screen — new requests appear in **Requests** at the top.",
+       "Tap **Accept** to start chatting, or **Ignore**.",
+       "To block, tap ⋯ on the request and choose **Block**."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Requests only show when you have one waiting. Tap See all if there are more than three."
+     }
+    ]
+   },
+   {
+    "id": "mr-send",
+    "question": "Why does my message say \"Send request\"?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "The person hasn't connected with you yet, so your first message is sent as a request. Say hi and who you are — you can chat once they accept."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "You can send a request if you're in a group together or you have their number saved.",
+       "You can have one open request to each person.",
+       "Some people turn requests off — you'll see \"This person isn't accepting message requests\"."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mr-number",
+    "question": "Who can see my phone number?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Someone who already has your number saved in their phone sees it in full.",
+       "Anyone else sees it hidden, unless you choose to show it.",
+       "People who only follow you on Discover never see your number."
+      ]
+     },
+     {
+      "type": "steps",
+      "items": [
+       "To choose, open a chat (or Group Info) and tap ⋯ → **Chat settings** on iPhone, or the Privacy section of the contact profile on Android.",
+       "Turn **Show my number to everyone** on or off."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Your number never appears in people search, profiles from Discover, or reel comments."
+     }
+    ]
+   },
+   {
+    "id": "mr-ask-number",
+    "question": "Someone asked for my number — what do I do?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "A number request appears in Requests on your Messages screen: \"… asked for your number\"."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Tap **Share** to show them your number.",
+       "Tap **Decline** to keep it hidden — they aren't told the reason."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "coins",
+  "icon": "creditcard",
+  "title": "Coins & Earnings",
+  "blurb": "Buy, spend, earn and cash out.",
+  "items": [
+   {
+    "id": "co-what",
+    "question": "What are coins?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Coins are the only currency inside Sogo. You buy them, earn them and spend them — all from one balance."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open the Settings tab and tap Wallet.",
+       "Your coin balance is at the top.",
+       "Below it you'll see how much of that balance you can cash out."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Coins you earned — from gifts, ads and trainings — can be turned into money. Coins you bought are for spending inside the app only."
+     }
+    ]
+   },
+   {
+    "id": "co-get",
+    "question": "How do I get coins?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "There are four ways coins come in."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Where coins come from",
+       "Can you cash it out?"
+      ],
+      "rows": [
+       [
+        "Buying a coin pack",
+        "No — bought coins are for spending"
+       ],
+       [
+        "Someone sends you a gift",
+        "Yes"
+       ],
+       [
+        "Watching a video ad right through",
+        "Yes"
+       ],
+       [
+        "Completing a paid training you hosted",
+        "Yes"
+       ]
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "A tip is just a gift — same thing, same coins."
+     }
+    ]
+   },
+   {
+    "id": "co-spend",
+    "question": "What can I spend coins on?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Three things:"
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Sending a gift to someone you're watching or chatting with",
+       "Joining a paid live training",
+       "Boosting your own status so more people see it"
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Spending always uses your bought coins first, so sending a gift never eats into the balance you were saving to cash out."
+     }
+    ]
+   },
+   {
+    "id": "co-buy",
+    "question": "How do I buy coins?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the Settings tab and tap Wallet.",
+       "Choose a coin pack — 70, 350, 700 or 1400 coins.",
+       "Pay through the App Store (iPhone) or Google Play (Android) with your usual payment method."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Coins you buy can be spent on anything in Sogo, but they can never be cashed out. Only coins you earn can."
+     }
+    ]
+   },
+   {
+    "id": "co-gift-received",
+    "question": "Someone sent me a gift — where did it go?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Straight into your coin balance, in full. Sogo doesn't take a cut when you receive."
+     },
+     {
+      "type": "note",
+      "text": "Gift coins are earned coins, so you can cash them out once they've finished their 7-day wait."
+     }
+    ]
+   },
+   {
+    "id": "co-ads-earn",
+    "question": "How much can I earn from ads?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "You get 1 coin for each video ad you watch all the way through, up to 20 ads a day."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Skipping an ad earns nothing — you have to watch it to the end.",
+       "20 ads a day is 20 coins, which is about $0.16.",
+       "The limit resets the next day."
+      ]
+     },
+     {
+      "type": "warning",
+      "text": "Ads are a small top-up, not an income. Please don't count on them to reach the $50 withdrawal minimum on their own."
+     }
+    ]
+   },
+   {
+    "id": "co-ads-stopped",
+    "question": "Why did I stop earning from ads today?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Almost always because you've hit the daily limit. It resets the next day and you'll start earning again."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "You already watched 20 ads today.",
+       "You skipped the ad instead of watching it to the end.",
+       "You turned the Earn from ads switch off."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "co-ads-off",
+    "question": "How do I turn ad earning off?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Earning from ads is on by default. There's an Earn from ads switch on the status screen — turn it off and you're done."
+     },
+     {
+      "type": "note",
+      "text": "With it off you won't be shown these ads at all, and you won't earn coins from them. You can switch it back on any time."
+     }
+    ]
+   },
+   {
+    "id": "co-training-pay",
+    "question": "I hosted a training — when do I get paid?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "After the whole training is finished, not during it. That's what protects the people who paid to join."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Every session has to be run.",
+       "A session only counts if at least half your subscribers (rounded up) turn up live.",
+       "Once all of that is done, the coins land in your balance and start their 7-day wait."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "co-boost",
+    "question": "What is boosting, and do I earn from it?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Boosting spends your coins to show your status to more people. You're the advertiser here, so you don't earn from your own boost — the people who watch it do."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open one of your own statuses.",
+       "Tap Boost.",
+       "Choose your budget in coins and confirm."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Sogo reviews every boost before it runs. If it isn't approved, your coins come straight back."
+     }
+    ]
+   },
+   {
+    "id": "co-bought-no-cash",
+    "question": "Why can't I withdraw the coins I bought?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Because bought coins aren't a deposit — they're credit for using Sogo, like any in-app currency. App store rules and money-handling laws don't allow us to pay them back out as cash."
+     },
+     {
+      "type": "note",
+      "text": "Only coins you earned — gifts, ads and trainings — can be cashed out. And because spending uses bought coins first, gifting never eats into the part you can withdraw."
+     }
+    ]
+   },
+   {
+    "id": "co-coin-value",
+    "question": "How much is a coin worth when I cash out?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Each earned coin is worth $0.008."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Earned coins",
+       "Worth"
+      ],
+      "rows": [
+       [
+        "1,250",
+        "$10"
+       ],
+       [
+        "6,250",
+        "$50"
+       ],
+       [
+        "12,500",
+        "$100"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "text": "The 20% fee comes out of that, so a $50 withdrawal sends about $40 to your bank."
+     }
+    ]
+   },
+   {
+    "id": "co-fee",
+    "question": "What is the 20% fee?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "It's what Sogo keeps, and it's charged once — only when you withdraw. Nothing is taken when you earn."
+     },
+     {
+      "type": "bullets",
+      "items": [
+       "Withdraw $50, the fee is $10, and $40 reaches your bank.",
+       "Receive a gift and the full amount lands in your balance, untouched."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "The exact fee and what you'll actually receive are shown on the confirmation screen before you confirm."
+     }
+    ]
+   },
+   {
+    "id": "co-hold",
+    "question": "Why do I have to wait 7 days?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Every coin you earn waits 7 days from the day you earned it, then becomes available to withdraw. It gives us time to catch reversed payments and disputes before money leaves."
+     },
+     {
+      "type": "note",
+      "text": "Each earning waits on its own, so your whole balance is never locked. Coins you bought never wait — but they can't be withdrawn either."
+     }
+    ]
+   },
+   {
+    "id": "co-maturing",
+    "question": "Part of my balance says it's maturing — what does that mean?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Those are coins you earned in the last 7 days. They're yours, they just aren't ready to withdraw yet."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Wallet and tap Withdraw.",
+       "You'll see what's available now, what's still maturing, and when the next batch is ready."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "You can still spend maturing coins inside Sogo — the wait only applies to cashing out."
+     }
+    ]
+   },
+   {
+    "id": "co-minimum",
+    "question": "What's the minimum withdrawal?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "$50 — which is about 6,250 earned coins that have finished their 7-day wait."
+     },
+     {
+      "type": "note",
+      "text": "If you're below it, the Withdraw screen shows you how far off you are."
+     }
+    ]
+   },
+   {
+    "id": "co-withdraw",
+    "question": "How do I withdraw?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Wallet and tap Withdraw.",
+       "Add your bank account the first time.",
+       "Enter the amount — you'll see the fee and exactly what reaches your bank.",
+       "Confirm."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "You need at least $50 available, and only earned coins that have finished their 7-day wait count towards it."
+     }
+    ]
+   },
+   {
+    "id": "co-bank-add",
+    "question": "How do I add my bank account?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Wallet and tap Withdraw.",
+       "Choose your country.",
+       "Fill in the bank details the form asks for and save."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "The form changes by country — we only ask for what your bank actually needs. Your details go to our payout partner; Sogo never stores them."
+     }
+    ]
+   },
+   {
+    "id": "co-bank-fields",
+    "question": "My country asks for an IBAN or a routing number — what do I enter?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Whatever the form asks for. It's built for your country, so the fields you see are the ones your bank uses."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Country",
+       "What you'll be asked for"
+      ],
+      "rows": [
+       [
+        "Pakistan",
+        "Your IBAN"
+       ],
+       [
+        "United States",
+        "Routing number, account number, account type"
+       ],
+       [
+        "United Kingdom",
+        "Sort code and account number"
+       ],
+       [
+        "India",
+        "IFSC code and account number"
+       ],
+       [
+        "Nigeria, Ghana, Kenya",
+        "Pick your bank, then your account number"
+       ]
+      ]
+     },
+     {
+      "type": "warning",
+      "text": "Copy the details from your bank app or a statement, exactly as they appear. One wrong digit and the payout fails."
+     }
+    ]
+   },
+   {
+    "id": "co-countries",
+    "question": "Is my country supported?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "23 countries can receive payouts today, including Pakistan and ten across Africa."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Wallet and tap Withdraw.",
+       "Tap Country — if yours is in the list, you're supported."
+      ]
+     },
+     {
+      "type": "note",
+      "text": "If your country isn't there yet, your coins stay safely in your balance and you can still spend them in Sogo."
+     }
+    ]
+   },
+   {
+    "id": "co-timing",
+    "question": "How long does a withdrawal take?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "It depends on your bank and your country, so we don't promise a date."
+     },
+     {
+      "type": "note",
+      "text": "You can check where a withdrawal has got to in your Wallet. If it doesn't go through, the coins come back to your balance."
+     }
+    ]
+   },
+   {
+    "id": "co-failed",
+    "question": "What happens if my withdrawal fails?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "The coins come back to your balance in full, and they don't have to wait another 7 days — you can try again straight away."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Check your bank details, especially the account number.",
+       "Fix anything that's wrong and save.",
+       "Request the withdrawal again."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Wrong or mistyped bank details are the usual cause."
+     }
+    ]
+   },
+   {
+    "id": "co-history",
+    "question": "Where can I see where my coins went?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Your Wallet keeps a running list of every coin that came in and went out, newest first, with what each one was for."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open the Settings tab and tap Wallet.",
+       "Scroll to your activity."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "settings",
+  "icon": "gearshape",
+  "title": "Settings & Appearance",
+  "blurb": "Theme, notifications, language and account.",
+  "items": [
+   {
+    "id": "set-appearance",
+    "question": "How do I switch between dark and light theme?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Sogo uses a dark theme by default."
+     },
+     {
+      "type": "steps",
+      "items": [
+       "Open the Settings tab.",
+       "Tap Appearance.",
+       "Choose System, Light or Dark — it changes instantly."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "set-wallpaper",
+    "question": "How do I change my chat wallpaper?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open a chat and open its options, or go to Settings.",
+       "Choose a wallpaper — solid colour, gradient or pattern.",
+       "Preview and confirm."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "set-notif",
+    "question": "How do I manage notifications?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Notifications.",
+       "Configure message, group and call alerts (sound, preview, etc.)."
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "You can also mute a single chat by swiping or long-pressing it in Messages."
+     }
+    ]
+   },
+   {
+    "id": "set-account",
+    "question": "How do I log out, change number or delete my account?",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "Action",
+       "Where"
+      ],
+      "rows": [
+       [
+        "Log out",
+        "Settings → Account → Log out"
+       ],
+       [
+        "Change number",
+        "Settings → Account → Change Number"
+       ],
+       [
+        "Delete account",
+        "Settings → Account → Delete Account"
+       ],
+       [
+        "Privacy controls",
+        "Settings → Privacy"
+       ]
+      ]
+     },
+     {
+      "type": "warning",
+      "text": "Deleting your account is permanent — your messages, groups and media are removed and cannot be recovered."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "safety",
+  "icon": "checkmark.shield",
+  "title": "Safety & Privacy",
+  "blurb": "Stay in control of your privacy and security.",
+  "items": [
+   {
+    "id": "sf-security",
+    "question": "How does Sogo keep my account secure?",
+    "blocks": [
+     {
+      "type": "bullets",
+      "items": [
+       "Your number is verified by a one-time SMS code (OTP).",
+       "Your session is protected with secure tokens.",
+       "Screenshot and screen-recording protection can block capture during video calls, live streams, view-once media, and protected statuses."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sf-capture",
+    "question": "What does screenshot & recording protection do?",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "In several places Sogo can stop other people from capturing your screen — their screenshot or recording comes out blank."
+     },
+     {
+      "type": "table",
+      "headers": [
+       "Where",
+       "How it's controlled"
+      ],
+      "rows": [
+       [
+        "Video calls",
+        "The person who starts the call can turn protection on for everyone"
+       ],
+       [
+        "Live streams",
+        "The host can turn protection on for viewers"
+       ],
+       [
+        "View-once photos & videos",
+        "Always protected while open"
+       ],
+       [
+        "Status",
+        "On by default; you can turn it off per status"
+       ]
+      ]
+     },
+     {
+      "type": "note",
+      "text": "Protection is a strong deterrent but not a guarantee — for example, someone could photograph the screen with another device. Never share anything you wouldn't want captured."
+     }
+    ]
+   },
+   {
+    "id": "sf-block",
+    "question": "How do I block or unblock someone?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open the chat or the person's profile.",
+       "Tap Block — they can no longer message or call you.",
+       "To unblock, open the same chat/profile and tap Unblock."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sf-privacy",
+    "question": "How do I control who can see my info?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Privacy.",
+       "Choose who can see your last seen, profile photo, about and status."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sf-report",
+    "question": "How do I report a problem?",
+    "blocks": [
+     {
+      "type": "steps",
+      "items": [
+       "Open Settings → Report a Problem.",
+       "Describe the issue and submit — your app version and device are attached automatically."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "troubleshooting",
+  "icon": "lifepreserver",
+  "title": "Troubleshooting",
+  "blurb": "Quick fixes for common issues.",
+  "items": [
+   {
+    "id": "tb-common",
+    "question": "Common issues and fixes",
+    "blocks": [
+     {
+      "type": "table",
+      "headers": [
+       "Issue",
+       "Try this"
+      ],
+      "rows": [
+       [
+        "OTP not arriving",
+        "Check the number + country code, wait for the timer, then Resend"
+       ],
+       [
+        "Call won't connect",
+        "Check your internet and that Sogo has microphone/camera permission"
+       ],
+       [
+        "Status won't upload",
+        "Check your network and that the video is 30s or less"
+       ],
+       [
+        "Messages stuck sending",
+        "Check your connection — messages send automatically once you're back online"
+       ],
+       [
+        "Not getting notifications",
+        "Allow notifications for Sogo in your phone's settings, and check in-app Notifications"
+       ]
+      ]
+     },
+     {
+      "type": "tip",
+      "text": "Still stuck? Settings → Report a Problem sends us the details to help."
+     }
+    ]
+   }
+  ]
+ }
+]

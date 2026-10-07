@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Help Center &amp; FAQ — SogoApp</title>
+<meta name="description" content="Answers about SogoApp: chats, calls, Discover and reels, comments, search and @usernames, following, message requests, coins and payouts, privacy and more.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://app.sogoapps.com/faq/">
+<link rel="icon" href="../assets/icon.png"><link rel="apple-touch-icon" href="../assets/icon.png">
+<meta property="og:title" content="SogoApp Help Center &amp; FAQ">
+<meta property="og:description" content="Step-by-step answers for every part of SogoApp.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://app.sogoapps.com/faq/">
+<meta property="og:image" content="https://app.sogoapps.com/assets/shots/chat.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* FAQ page only. Built on the site tokens in assets/style.css; no web fonts or
+   third-party requests, so the page is one HTML file + the shared stylesheet. */
+.faq{padding:48px 0 88px}
+.faq-head{max-width:720px}
+.faq-head h1{font-size:clamp(32px,5vw,48px); font-weight:700}
+.faq-head .p{max-width:60ch}
+.srch{position:relative; margin-top:28px; max-width:640px}
+.srch input{width:100%; font:inherit; font-size:16px; color:var(--tx); background:var(--bg-2);
+  border:1px solid var(--line); border-radius:14px; padding:15px 46px 15px 46px; outline:none;
+  transition:border-color .2s, box-shadow .2s; -webkit-appearance:none; appearance:none}
+.srch input::placeholder{color:var(--tx-3)}
+.srch input:focus{border-color:var(--blue); box-shadow:0 0 0 3px rgba(62,114,254,.22)}
+.srch svg{position:absolute; left:16px; top:50%; transform:translateY(-50%); width:18px; height:18px; color:var(--tx-3); pointer-events:none}
+.srch button{position:absolute; right:8px; top:50%; transform:translateY(-50%); border:0; background:transparent;
+  color:var(--tx-2); font:inherit; font-size:13px; padding:8px 10px; border-radius:8px; cursor:pointer}
+.srch button:hover{color:var(--tx); background:rgba(255,255,255,.06)}
+.srch button[hidden]{display:none}
+.count{font-family:var(--f-m); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--tx-3); margin:14px 0 0; min-height:1.5em}
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px}
+.chip{font-size:13px; color:var(--tx-2); text-decoration:none; border:1px solid var(--line); border-radius:99px;
+  padding:6px 12px; background:rgba(255,255,255,.025); white-space:nowrap}
+.chip:hover{color:var(--tx); border-color:rgba(255,255,255,.18)}
+.cats{margin-top:44px; display:grid; grid-template-columns:minmax(0,1fr); gap:44px; max-width:820px}
+.cat,.qa,.ans{min-width:0}
+.cat{scroll-margin-top:84px}
+.cat-h{margin-bottom:14px}
+.cat-h h2{font-size:22px; font-weight:600; display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.cat-h p{color:var(--tx-3); font-size:14px; margin:4px 0 0}
+.new{font-family:var(--f-m); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:#000;
+  background:var(--green); border-radius:6px; padding:3px 7px; font-weight:500}
+.qa{border:1px solid var(--line); border-radius:14px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.006));
+  scroll-margin-top:84px}
+.qa + .qa{margin-top:8px}
+.qa summary{list-style:none; cursor:pointer; display:flex; gap:16px; align-items:flex-start; justify-content:space-between;
+  padding:16px 18px; font-weight:500; font-size:15.5px; line-height:1.45; color:var(--tx); border-radius:14px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{background:rgba(255,255,255,.025)}
+.qa summary:focus-visible{outline:2px solid var(--blue); outline-offset:2px}
+.qa summary i{flex:none; width:10px; height:10px; margin-top:6px; border-right:2px solid var(--tx-3); border-bottom:2px solid var(--tx-3);
+  transform:rotate(45deg); transition:transform .2s}
+.qa[open] summary i{transform:rotate(225deg); margin-top:10px}
+.qa[open]{border-color:rgba(255,255,255,.14)}
+.ans{padding:0 18px 18px; color:var(--tx-2); font-size:15px}
+.ans > :first-child{margin-top:0}
+.ans p{margin:10px 0 0}
+.ans strong{color:var(--tx); font-weight:600}
+.st,.bl{margin:12px 0 0; padding-left:22px}
+.st li,.bl li{margin:6px 0; padding-left:4px}
+.st li::marker{color:var(--green); font-family:var(--f-m); font-size:13px}
+.bl li::marker{color:var(--tx-3)}
+.cl{margin:14px 0 0; border:1px solid var(--line); border-left:2px solid var(--green); border-radius:10px; padding:12px 14px; background:rgba(25,224,129,.045)}
+.cl p{margin:2px 0 0; font-size:14.5px}
+.cl-k{font-family:var(--f-m); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--green)}
+.cl-warning{border-left-color:var(--gold); background:rgba(255,199,44,.05)} .cl-warning .cl-k{color:var(--gold)}
+.cl-note{border-left-color:var(--blue); background:rgba(62,114,254,.06)} .cl-note .cl-k{color:#8aa9ff}
+.tw{margin:14px 0 0; overflow-x:auto; border:1px solid var(--line); border-radius:10px}
+.tw table{border-collapse:collapse; width:100%; font-size:14px}
+.tw th,.tw td{text-align:left; padding:10px 12px; vertical-align:top; border-bottom:1px solid var(--line-2)}
+.tw th{color:var(--tx); font-weight:600; background:rgba(255,255,255,.03)}
+.tw tr:last-child td{border-bottom:0}
+.perma{display:inline-block; margin-top:14px; font-size:12.5px; color:var(--tx-3); text-decoration:none}
+.perma:hover{color:var(--tx-2); text-decoration:underline}
+.empty{max-width:820px; margin-top:40px; border:1px dashed var(--line); border-radius:14px; padding:26px; color:var(--tx-2)}
+.empty a,.help a{color:var(--blue)}
+.help{max-width:820px; margin-top:56px; border:1px solid var(--line); border-radius:16px; padding:24px 26px;
+  background:linear-gradient(180deg,rgba(62,114,254,.06),rgba(255,255,255,.006))}
+.help h2{font-size:19px; font-weight:600}
+.help p{color:var(--tx-2); margin:8px 0 0; font-size:15px}
+mark{background:rgba(255,199,44,.28); color:inherit; border-radius:3px; padding:0 1px}
+.nav-faq{display:flex; gap:20px; align-items:center}
+.nav-faq a{color:var(--tx-2); text-decoration:none; font-size:14px; font-weight:500}
+.nav-faq a:hover{color:var(--tx)}
+@media (max-width:520px){
+  .faq{padding-top:32px}
+  .qa summary{padding:14px 14px; font-size:15px}
+  .ans{padding:0 14px 16px}
+  .cats{gap:36px}
+  .chips{flex-wrap:nowrap; overflow-x:auto; margin-inline:-16px; padding:0 16px 6px; scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+}
+</style>
+</head>
+<body>
+<div class="room"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="../index.html" aria-label="SogoApp home"><img src="../assets/wordmark.png" alt="SogoApp"></a>
+    <nav class="nav-faq" aria-label="Site">
+      <a href="../support">Support</a>
+      <a href="../index.html#get" class="btn btn-p" style="color:#fff">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main class="faq">
+  <div class="wrap">
+    <div class="faq-head">
+      <p class="lbl">Help Center</p>
+      <h1>Frequently asked questions</h1>
+      <p class="p">Step-by-step answers for SogoApp on iPhone and Android, written against the real app screens. Start typing to filter, or pick a topic.</p>
+      <form class="srch" role="search" onsubmit="return false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label for="q" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search the FAQ</label>
+        <input id="q" type="search" placeholder="Search — e.g. reel, voice comment, username, payout" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        <button type="button" id="clr" hidden>Clear</button>
+      </form>
+      <p class="count" id="count" aria-live="polite">{{TOTAL}} answers · {{NCAT}} topics</p>
+      <nav class="chips" aria-label="Topics">{{CHIPS}}</nav>
+    </div>
+
+    <div class="cats" id="cats">
+{{SECTIONS}}
+    </div>
+
+    <div class="empty" id="empty" hidden>
+      <strong style="color:var(--tx)">No answers match that search.</strong>
+      <p style="margin:6px 0 0">Try a shorter word, or email <a href="mailto:support@sogoappusa.com">support@sogoappusa.com</a> and we'll help.</p>
+    </div>
+
+    <div class="help">
+      <h2>Still stuck?</h2>
+      <p>In the app, open <strong style="color:var(--tx)">Settings → Report a Problem</strong> — your app version and device are attached automatically. Or email <a href="mailto:support@sogoappusa.com">support@sogoappusa.com</a>; we usually reply within 1–2 business days.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <a class="brand" href="../index.html"><img src="../assets/wordmark.png" alt="SogoApp">
+        <p>Messaging, calls, live streaming and a coin wallet. By Sogoapp LLC, United States.</p></a>
+      <div class="fc"><strong>Product</strong><a href="../index.html#features">Features</a><a href="../index.html#coins">Coins</a><a href="../index.html#earn">Earning</a></div>
+      <div class="fc"><strong>Legal</strong><a href="../privacy-policy">Privacy Policy</a><a href="../terms-of-service">Terms of Service</a></div>
+      <div class="fc"><strong>Help</strong><a href="./">FAQ</a><a href="../support">Support</a><a href="../delete-account">Delete account</a><a href="mailto:support@sogoappusa.com">Email us</a></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Sogoapp LLC. All rights reserved.</span>
+      <span>Apple and App Store are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var q = document.getElementById('q'), clr = document.getElementById('clr'),
+      count = document.getElementById('count'), empty = document.getElementById('empty');
+  var items = [].slice.call(document.querySelectorAll('.qa'));
+  var cats = [].slice.call(document.querySelectorAll('.cat'));
+  var total = items.length, base = count.textContent;
+
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[@#]/g, ' ').trim(); }
+  items.forEach(function (d) { d._s = norm(d.getAttribute('data-s')); });
+
+  function run() {
+    var v = norm(q.value), terms = v.split(/\s+/).filter(Boolean), shown = 0;
+    clr.hidden = !q.value;
+    items.forEach(function (d) {
+      var ok = terms.every(function (t) { return d._s.indexOf(t) !== -1; });
+      d.hidden = !ok;
+      if (ok) shown++;
+      if (terms.length) d.open = ok && shown <= 3; // open the first few matches
+    });
+    cats.forEach(function (c) { c.hidden = !c.querySelector('.qa:not([hidden])'); });
+    empty.hidden = shown !== 0;
+    count.textContent = terms.length ? (shown + (shown === 1 ? ' answer' : ' answers') + ' for “' + q.value.trim() + '”') : base;
+    try { history.replaceState(null, '', terms.length ? '?q=' + encodeURIComponent(q.value.trim()) + location.hash : location.pathname + location.hash); } catch (e) {}
+  }
+  var t;
+  q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(run, 80); });
+  clr.addEventListener('click', function () {
+    q.value = ''; run();
+    items.forEach(function (d) { d.open = false; });
+    q.focus();
+  });
+
+  function openHash() {
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (!h) return;
+    var el = document.getElementById(h);
+    if (el && el.tagName === 'DETAILS') { el.hidden = false; el.closest('.cat').hidden = false; el.open = true; el.scrollIntoView(); }
+  }
+  addEventListener('hashchange', openHash);
+
+  var m = /[?&]q=([^&]*)/.exec(location.search);
+  if (m) { q.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); run(); }
+  if (total !== items.length) base = total + ' answers';
+  openHash();
+})();
+</script>
+</body>
+</html>
