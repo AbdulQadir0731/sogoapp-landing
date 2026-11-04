@@ -106,7 +106,7 @@
       <li class="step">
         <div class="step-h"><span class="num">1</span><h2>Create your BytePlus account</h2></div>
         <p>Seedance is made by BytePlus. Sign up for a free BytePlus account with your email. The BytePlus console is in English.</p>
-        <a id="go" class="btn btn-p go" href="https://api.sogoapps.com/go/seedance" rel="noopener">
+        <a id="go" class="btn btn-p go" href="https://console.byteplus.com/" rel="noopener">
           <span>Create my BytePlus account<small>Opens the BytePlus sign-up page</small></span>
         </a>
         <div class="shot" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
@@ -207,9 +207,13 @@
 (function () {
   try { document.getElementById('yr').textContent = new Date().getFullYear(); } catch (e) {}
   try {
+    // Tracked redirect goes live once the backend /go/seedance route is on production;
+    // until then the button opens the BytePlus console directly (set TRACKED = true then).
+    var TRACKED = false;
     var u = new URLSearchParams(location.search).get('u');
-    if (u && /^[A-Za-z0-9_-]{1,64}$/.test(u)) {
-      document.getElementById('go').href = 'https://api.sogoapps.com/go/seedance?u=' + encodeURIComponent(u);
+    if (TRACKED) {
+      var q = (u && /^[A-Za-z0-9_-]{1,64}$/.test(u)) ? '?u=' + encodeURIComponent(u) : '';
+      document.getElementById('go').href = 'https://api.sogoapps.com/go/seedance' + q;
     }
   } catch (e) {}
 })();
