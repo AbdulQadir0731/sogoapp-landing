@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Make AI videos with Seedance — SogoApp</title>
+<meta name="description" content="Set up your own Seedance account by BytePlus and make AI videos in SogoApp. Your API key stays on your phone.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://app.sogoapps.com/ai/">
+<link rel="icon" href="../assets/icon.png"><link rel="apple-touch-icon" href="../assets/icon.png">
+<meta property="og:title" content="Make AI videos in SogoApp with Seedance">
+<meta property="og:description" content="Four steps: create a BytePlus account, turn on Seedance, create an API key, paste it into SogoApp.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://app.sogoapps.com/ai/">
+<meta property="og:image" content="https://app.sogoapps.com/assets/shots/chat.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* AI-video setup guide only. Built on the site tokens in assets/style.css;
+   no web fonts, no cookies, no analytics, no third-party requests. */
+.ai{padding:48px 0 88px}
+.ai-in{max-width:760px}
+.ai h1{font-size:clamp(32px,5vw,48px); font-weight:700}
+.ai .p{max-width:60ch}
+.key{margin-top:22px; border:1px solid var(--line); border-left:2px solid var(--green); border-radius:12px;
+  padding:16px 18px; background:rgba(25,224,129,.045)}
+.key p{margin:0; color:var(--tx-2); font-size:15px}
+.key strong{color:var(--tx)}
+.steps{list-style:none; padding:0; margin:40px 0 0; display:grid; gap:14px}
+.step{border:1px solid var(--line); border-radius:16px; padding:24px;
+  background:linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.006))}
+.step-h{display:flex; gap:14px; align-items:center}
+.num{flex:none; width:34px; height:34px; border-radius:50%; display:grid; place-items:center;
+  font-family:var(--f-m); font-size:14px; font-weight:600; color:#000; background:var(--green)}
+.step h2{font-size:19px; font-weight:600; margin:0; line-height:1.3}
+.step p,.step li{color:var(--tx-2); font-size:15px}
+.step p{margin:12px 0 0}
+.step ol{margin:12px 0 0; padding-left:22px}
+.step li{margin:5px 0}
+.step strong{color:var(--tx); font-weight:600}
+.go{margin-top:18px; font-size:16px; padding:15px 22px}
+.go small{display:block; font-size:12px; font-weight:500; opacity:.75}
+.shot{margin-top:18px; border:1px dashed rgba(255,255,255,.16); border-radius:12px; min-height:150px;
+  display:grid; place-items:center; text-align:center; padding:18px;
+  font-family:var(--f-m); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--tx-3);
+  background:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 10px,transparent 10px 20px)}
+.sec2{margin-top:56px}
+.sec2 > h2{font-size:24px; font-weight:600}
+.qa{border:1px solid var(--line); border-radius:14px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.006))}
+.qa + .qa{margin-top:8px}
+.qa summary{list-style:none; cursor:pointer; display:flex; gap:16px; align-items:flex-start; justify-content:space-between;
+  padding:16px 18px; font-weight:500; font-size:15.5px; line-height:1.45; color:var(--tx); border-radius:14px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{background:rgba(255,255,255,.025)}
+.qa summary:focus-visible{outline:2px solid var(--blue); outline-offset:2px}
+.qa summary i{flex:none; width:10px; height:10px; margin-top:6px; border-right:2px solid var(--tx-3); border-bottom:2px solid var(--tx-3);
+  transform:rotate(45deg); transition:transform .2s}
+.qa[open] summary i{transform:rotate(225deg); margin-top:10px}
+.qa[open]{border-color:rgba(255,255,255,.14)}
+.ans{padding:0 18px 18px; color:var(--tx-2); font-size:15px}
+.ans p{margin:0}
+.ans p + p{margin-top:10px}
+.ans strong{color:var(--tx); font-weight:600}
+.label{margin-top:14px; border:1px solid var(--line); border-left:2px solid var(--gold); border-radius:12px;
+  padding:18px 20px; background:rgba(255,199,44,.04)}
+.label p{margin:0; color:var(--tx-2); font-size:15px}
+.label p + p{margin-top:10px}
+.label strong{color:var(--tx)}
+.ai a:not(.btn){color:var(--blue)}
+.nav-faq{display:flex; gap:20px; align-items:center}
+.nav-faq a{color:var(--tx-2); text-decoration:none; font-size:14px; font-weight:500}
+.nav-faq a:hover{color:var(--tx)}
+.fine{color:var(--tx-3); font-size:13px; margin-top:36px}
+@media (max-width:520px){
+  .ai{padding-top:32px}
+  .step{padding:18px}
+  .go{width:100%; justify-content:center}
+  .qa summary{padding:14px}
+  .ans{padding:0 14px 16px}
+  .nav-faq .hide-xs{display:none}
+}
+</style>
+</head>
+<body>
+<div class="room"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="../index.html" aria-label="SogoApp home"><img src="../assets/wordmark.png" alt="SogoApp"></a>
+    <nav class="nav-faq" aria-label="Site">
+      <a href="../faq/" class="hide-xs">FAQ</a>
+      <a href="../support" class="hide-xs">Support</a>
+      <a href="../index.html#get" class="btn btn-p" style="color:#fff">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main class="ai">
+  <div class="wrap ai-in">
+    <p class="lbl">AI videos</p>
+    <h1>Make AI videos in SogoApp with Seedance</h1>
+    <p class="p">SogoApp uses your own Seedance account by BytePlus to make AI videos. You create the account and an API key once, paste the key into SogoApp, and you are ready to go.</p>
+    <div class="key">
+      <p><strong>Your API key stays on your phone.</strong> SogoApp never sees or stores it. The app sends your request straight from your phone to BytePlus.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-h"><span class="num">1</span><h2>Create your BytePlus account</h2></div>
+        <p>Seedance is made by BytePlus. Sign up for a free BytePlus account with your email. The BytePlus console is in English.</p>
+        <a id="go" class="btn btn-p go" href="https://api.sogoapps.com/go/seedance" rel="noopener">
+          <span>Create my BytePlus account<small>Opens the BytePlus sign-up page</small></span>
+        </a>
+        <div class="shot" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
+      </li>
+
+      <li class="step">
+        <div class="step-h"><span class="num">2</span><h2>Turn on Seedance in ModelArk</h2></div>
+        <ol>
+          <li>Sign in to the <strong>BytePlus console</strong>.</li>
+          <li>Open <strong>ModelArk</strong>.</li>
+          <li>Find a <strong>Seedance</strong> video model and <strong>activate</strong> it.</li>
+        </ol>
+        <p>BytePlus charges for each video it generates, according to its own pricing. You can see the pricing and your usage in the BytePlus console.</p>
+        <div class="shot" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
+      </li>
+
+      <li class="step">
+        <div class="step-h"><span class="num">3</span><h2>Create an API key</h2></div>
+        <ol>
+          <li>In <strong>ModelArk</strong>, open <strong>API keys</strong>.</li>
+          <li>Tap <strong>Create</strong>.</li>
+          <li>Copy the new key. Treat it like a password and do not share it with anyone.</li>
+        </ol>
+        <div class="shot" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
+      </li>
+
+      <li class="step">
+        <div class="step-h"><span class="num">4</span><h2>Paste the key into SogoApp</h2></div>
+        <ol>
+          <li>Open <strong>SogoApp</strong> and go to <strong>Reels</strong>.</li>
+          <li>Open the <strong>camera</strong> and choose <strong>AI video</strong>.</li>
+          <li>Tap <strong>I already have a key</strong>.</li>
+          <li>Paste your key. Done — you can make your first AI video.</li>
+        </ol>
+        <div class="shot" role="img" aria-label="Screenshot coming soon">Screenshot coming soon</div>
+      </li>
+    </ol>
+
+    <section class="sec2" aria-labelledby="h-stuck">
+      <h2 id="h-stuck">Stuck?</h2>
+      <div style="margin-top:14px">
+        <details class="qa"><summary>My key didn't work<i aria-hidden="true"></i></summary>
+          <div class="ans">
+            <p>Copy the key again from <strong>ModelArk → API keys</strong> and paste it again — make sure nothing is missing at the start or end and there are no extra spaces.</p>
+            <p>Also check that a <strong>Seedance</strong> video model is <strong>activated</strong> in ModelArk (step 2). A key works only for models that are turned on.</p>
+          </div>
+        </details>
+        <details class="qa"><summary>BytePlus says my region is not supported<i aria-hidden="true"></i></summary>
+          <div class="ans">
+            <p>BytePlus does not offer its services in every country or region. If sign-up or Seedance is not available where you are, SogoApp cannot change that — check BytePlus's own list of supported regions.</p>
+          </div>
+        </details>
+        <details class="qa"><summary>It says I'm out of credit<i aria-hidden="true"></i></summary>
+          <div class="ans">
+            <p>Generation is paid to BytePlus, not to SogoApp. Top up your balance in the <strong>BytePlus console</strong>, then try again in SogoApp.</p>
+          </div>
+        </details>
+        <details class="qa"><summary>What happens to my key, prompt and photos?<i aria-hidden="true"></i></summary>
+          <div class="ans">
+            <p><strong>Your key</strong> is stored only on your phone. SogoApp never sees or stores it.</p>
+            <p><strong>Your prompt and any photo you choose</strong> are sent to BytePlus to make the video, and are handled under BytePlus's terms and privacy policy. You can remove the key from the app at any time, and you can delete or replace the key in the BytePlus console.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="sec2" aria-labelledby="h-label">
+      <h2 id="h-label">AI-generated label</h2>
+      <div class="label">
+        <p>Videos made this way are labelled <strong>“AI-generated”</strong> in SogoApp, so people always know.</p>
+        <p>AI videos follow the same rules as everything else you share. Please read our <a href="../community-guidelines/">Community Guidelines</a>.</p>
+      </div>
+    </section>
+
+    <p class="fine">Seedance and BytePlus are trademarks of their respective owners. SogoApp is not affiliated with or endorsed by BytePlus. Questions? Email <a href="mailto:support@sogoappusa.com">support@sogoappusa.com</a>.</p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <a class="brand" href="../index.html"><img src="../assets/wordmark.png" alt="SogoApp">
+        <p>Messaging, calls, live streaming and a coin wallet. By Sogoapp LLC, United States.</p></a>
+      <div class="fc"><strong>Product</strong><a href="../index.html#features">Features</a><a href="../index.html#coins">Coins</a><a href="../index.html#earn">Earning</a></div>
+      <div class="fc"><strong>Legal</strong><a href="../privacy-policy">Privacy Policy</a><a href="../terms-of-service">Terms of Service</a><a href="../community-guidelines/">Community Guidelines</a></div>
+      <div class="fc"><strong>Help</strong><a href="../faq/">FAQ</a><a href="../support">Support</a><a href="../delete-account">Delete account</a><a href="mailto:support@sogoappusa.com">Email us</a></div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr">2026</span> Sogoapp LLC. All rights reserved.</span>
+      <span>Apple and App Store are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Pass the in-app referral id (?u=) through to the sign-up link. Nothing else:
+// no cookies, no storage, no analytics.
+(function () {
+  try { document.getElementById('yr').textContent = new Date().getFullYear(); } catch (e) {}
+  try {
+    var u = new URLSearchParams(location.search).get('u');
+    if (u && /^[A-Za-z0-9_-]{1,64}$/.test(u)) {
+      document.getElementById('go').href = 'https://api.sogoapps.com/go/seedance?u=' + encodeURIComponent(u);
+    }
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
