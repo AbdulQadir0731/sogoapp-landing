@@ -20,6 +20,9 @@
   var p = location.pathname.split("/").filter(Boolean);
   if (p.length >= 2) {
     var kind = p[0], id = p[1];
+    // Reel share links (9 Nov 2026): app.sogoapps.com/r/<code> is served by a Cloudflare worker from the API.
+    // If that worker is ever off, Pages lands here — forward to the API's page so the link still works.
+    if (kind === "r" && /^[A-Za-z0-9]{4,32}$/.test(id)) { location.replace("https://api.sogoapps.com/r/" + id + location.search); return; }
     var to = { u: "/u/", invite: "/invite/" }[kind];
     if (to) { location.replace(to + "?id=" + encodeURIComponent(id)); return; }
     if (kind === "qr" || kind === "call" || kind === "join") {
